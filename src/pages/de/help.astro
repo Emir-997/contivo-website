@@ -1,0 +1,15 @@
+---
+import Layout from '../_layout.astro';
+import { text } from '../../content/site.js';
+const lang = 'de';
+const t = text[lang];
+---
+<Layout lang={lang} currentPath="/help" title={`${t.pages.helpTitle} — Contivo`}>
+  <main class="page"><div class="container page-card">
+    <h1>{t.pages.helpTitle}</h1>
+    <h2>{t.pages.helpQ1}</h2><p>{t.pages.helpA1}</p>
+    <h2>{t.pages.helpQ2}</h2><p>{t.pages.helpA2}</p>
+    <h2>{t.pages.helpQ3}</h2><p>{t.pages.helpA3}</p>
+    <h2>{t.pages.helpQ4}</h2><p>{t.pages.helpA4}</p>
+  </div></main>
+</Layout>

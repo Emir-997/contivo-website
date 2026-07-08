@@ -1,0 +1,17 @@
+---
+import Layout from '../_layout.astro';
+import { site, text } from '../../content/site.js';
+const lang = 'de';
+const t = text[lang];
+---
+<Layout lang={lang} currentPath="/privacy" title={`${t.pages.privacyTitleLong} — Contivo`}>
+  <main class="page"><div class="container page-card">
+    <h1>{t.pages.privacyTitleLong}</h1>
+    <p>{t.pages.privacyIntro}</p>
+    <h2>{t.pages.dataTitle}</h2><p>{t.pages.dataText}</p>
+    <h2>{t.pages.purposeTitle}</h2><p>{t.pages.purposeText}</p>
+    <h2>{t.pages.storageTitle}</h2><p>{t.pages.storageText}</p>
+    <h2>{t.pages.deleteTitle}</h2><p>{t.pages.deleteText} <a href={`mailto:${site.privacyEmail}`}>{site.privacyEmail}</a>.</p>
+    <h2>{t.pages.contactTitle}</h2><p><a href={`mailto:${site.privacyEmail}`}>{site.privacyEmail}</a></p>
+  </div></main>
+</Layout>

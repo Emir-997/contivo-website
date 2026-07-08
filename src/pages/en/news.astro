@@ -1,0 +1,16 @@
+---
+import Layout from '../_layout.astro';
+import { text } from '../../content/site.js';
+const lang = 'en';
+const t = text[lang];
+---
+<Layout lang={lang} currentPath="/news" title={`${t.pages.newsTitle} — Contivo`}>
+  <main class="page"><div class="container page-card">
+    <h1>{t.pages.newsTitle}</h1>
+    <p>{t.pages.newsText}</p>
+    <div class="card" style="box-shadow:none; margin-top:24px;">
+      <h3>{t.pages.newsCardTitle}</h3>
+      <p>{t.pages.newsCardText}</p>
+    </div>
+  </div></main>
+</Layout>

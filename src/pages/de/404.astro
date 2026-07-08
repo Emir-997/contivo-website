@@ -1,0 +1,13 @@
+---
+import Layout from '../_layout.astro';
+import { text } from '../../content/site.js';
+const lang = 'de';
+const t = text[lang];
+---
+<Layout lang={lang} currentPath="/" title={`${t.pages.notFound} — Contivo`}>
+  <main class="page"><div class="container page-card">
+    <h1>{t.pages.notFound}</h1>
+    <p>{t.pages.notFoundText}</p>
+    <a class="btn btn-primary" href="/de/">{t.pages.homeButton}</a>
+  </div></main>
+</Layout>
