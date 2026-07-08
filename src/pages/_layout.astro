@@ -1,8 +1,18 @@
 ---
 import '../styles/global.css';
 import { site, text, languages, pathFor } from '../content/site.js';
-const { lang = 'ru', title = site.name, description = 'Contivo — приложение для личных и совместных финансов.', currentPath = '/' } = Astro.props;
+
+const {
+  lang = 'ru',
+  title = `${site.name} — финансы, бюджеты и отчёты`,
+  description = 'Contivo помогает вести доходы и расходы, создавать бюджеты, планировать цели и экспортировать отчёты в PDF и Excel.',
+  currentPath = '/',
+} = Astro.props;
+
 const t = text[lang];
+const canonicalUrl = `https://contivoapp.com${pathFor(lang, currentPath)}`;
+const ogImage = 'https://contivoapp.com/icon.png';
+
 const nav = [
   { label: t.nav.home, href: pathFor(lang, '/') },
   { label: t.nav.help, href: pathFor(lang, '/help') },
@@ -15,9 +25,27 @@ const nav = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
+
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <meta name="theme-color" content="#6d35d4" />
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImage} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
   </head>
   <body>
     <header class="header">
