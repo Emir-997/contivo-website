@@ -1,3 +1,4 @@
-Summary: Add robots txt
-Commit to main
-Push origin
+User-agent: *
+Allow: /
+
+Sitemap: https://contivoapp.com/sitemap.xml
