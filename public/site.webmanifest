@@ -1,18 +1,15 @@
 {
   "name": "Contivo",
   "short_name": "Contivo",
-  "description": "Contivo — приложение для финансов, бюджетов, целей и отчётов.",
   "start_url": "/",
-  "scope": "/",
   "display": "standalone",
-  "background_color": "#f7f3ff",
-  "theme_color": "#6d35d4",
+  "background_color": "#ffffff",
+  "theme_color": "#7C4DFF",
   "icons": [
     {
-      "src": "/icon.png",
-      "sizes": "1024x1024",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
