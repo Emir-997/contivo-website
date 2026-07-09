@@ -10,6 +10,7 @@ const {
 } = Astro.props;
 
 const t = text[lang];
+const analyticsId = 'G-KVYG4BB9QT';
 const canonicalUrl = `https://contivoapp.com${pathFor(lang, currentPath)}`;
 const ogImage = 'https://contivoapp.com/og-image.png';
 
@@ -20,42 +21,40 @@ const nav = [
   { label: t.nav.contact, href: pathFor(lang, '/contact') },
 ];
 
-const jsonLd = {
+const schemaData = {
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'Organization',
       '@id': 'https://contivoapp.com/#organization',
       name: 'Contivo',
-      url: 'https://contivoapp.com/',
+      url: 'https://contivoapp.com',
       logo: 'https://contivoapp.com/icon.png',
-      sameAs: []
     },
     {
       '@type': 'WebSite',
       '@id': 'https://contivoapp.com/#website',
-      url: 'https://contivoapp.com/',
+      url: 'https://contivoapp.com',
       name: 'Contivo',
       publisher: { '@id': 'https://contivoapp.com/#organization' },
-      inLanguage: lang
+      inLanguage: lang,
     },
     {
       '@type': 'SoftwareApplication',
-      '@id': 'https://contivoapp.com/#app',
+      '@id': 'https://contivoapp.com/#software',
       name: 'Contivo',
       applicationCategory: 'FinanceApplication',
-      operatingSystem: 'Android, iOS',
-      description,
-      url: 'https://contivoapp.com/',
+      operatingSystem: 'Android, iOS, Web',
+      url: 'https://contivoapp.com',
       image: ogImage,
-      publisher: { '@id': 'https://contivoapp.com/#organization' },
       offers: {
         '@type': 'Offer',
         price: '0',
-        priceCurrency: 'EUR'
-      }
-    }
-  ]
+        priceCurrency: 'EUR',
+      },
+      publisher: { '@id': 'https://contivoapp.com/#organization' },
+    },
+  ],
 };
 ---
 <!doctype html>
@@ -83,14 +82,23 @@ const jsonLd = {
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content={lang === 'ru' ? 'ru_RU' : lang === 'de' ? 'de_DE' : 'en_US'} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
 
-    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${analyticsId}`} />
+    <script is:inline define:vars={{ analyticsId }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', analyticsId, {
+        anonymize_ip: true,
+      });
+    </script>
   </head>
   <body>
     <header class="header">
