@@ -9,8 +9,8 @@ export const site = {
 };
 
 export const languages = [
-  { code: 'ru', label: 'Русский', prefix: '' },
-  { code: 'en', label: 'English', prefix: '/en' },
+  { code: 'en', label: 'English', prefix: '' },
+  { code: 'ru', label: 'Русский', prefix: '/ru' },
   { code: 'de', label: 'Deutsch', prefix: '/de' },
 ];
 
@@ -60,7 +60,7 @@ export const text = {
 };
 
 export function prefixFor(lang) {
-  return lang === 'ru' ? '' : `/${lang}`;
+  return lang === 'en' ? '' : `/${lang}`;
 }
 
 export function pathFor(lang, path = '/') {
