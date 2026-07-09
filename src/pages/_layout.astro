@@ -5,14 +5,29 @@ import { site, text, languages, pathFor } from '../content/site.js';
 const {
   lang = 'ru',
   title = `${site.name} — финансы, бюджеты и отчёты`,
-  description = 'Contivo помогает вести доходы и расходы, создавать бюджеты, планировать цели и экспортировать отчёты в PDF и Excel.',
+  description,
   currentPath = '/',
 } = Astro.props;
 
-const t = text[lang];
+const t = text[lang] ?? text.ru;
+const pageDescription = description ?? t.home?.description ?? 'Contivo helps manage finances, budgets, goals and reports.';
 const analyticsId = 'G-KVYG4BB9QT';
-const canonicalUrl = `https://contivoapp.com${pathFor(lang, currentPath)}`;
-const ogImage = 'https://contivoapp.com/og-image.png';
+const baseUrl = 'https://contivoapp.com';
+const canonicalUrl = `${baseUrl}${pathFor(lang, currentPath)}`;
+const ogImage = `${baseUrl}/og-image.png`;
+
+const languageAlternates = languages.map((item) => ({
+  lang: item.code,
+  href: `${baseUrl}${pathFor(item.code, currentPath)}`,
+}));
+
+const defaultAlternateUrl = `${baseUrl}${pathFor('ru', currentPath)}`;
+
+const ogLocales = {
+  ru: 'ru_RU',
+  en: 'en_US',
+  de: 'de_DE',
+};
 
 const nav = [
   { label: t.nav.home, href: pathFor(lang, '/') },
@@ -26,33 +41,48 @@ const schemaData = {
   '@graph': [
     {
       '@type': 'Organization',
-      '@id': 'https://contivoapp.com/#organization',
-      name: 'Contivo',
-      url: 'https://contivoapp.com',
-      logo: 'https://contivoapp.com/icon.png',
+      '@id': `${baseUrl}/#organization`,
+      name: site.name,
+      url: baseUrl,
+      logo: `${baseUrl}/icon.png`,
+      email: site.supportEmail,
+      contactPoint: [
+        {
+          '@type': 'ContactPoint',
+          contactType: 'customer support',
+          email: site.supportEmail,
+          availableLanguage: ['Russian', 'English', 'German'],
+        },
+      ],
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://contivoapp.com/#website',
-      url: 'https://contivoapp.com',
-      name: 'Contivo',
-      publisher: { '@id': 'https://contivoapp.com/#organization' },
+      '@id': `${baseUrl}/#website`,
+      url: baseUrl,
+      name: site.name,
+      description: pageDescription,
+      publisher: { '@id': `${baseUrl}/#organization` },
       inLanguage: lang,
     },
     {
-      '@type': 'SoftwareApplication',
-      '@id': 'https://contivoapp.com/#software',
-      name: 'Contivo',
+      '@type': ['SoftwareApplication', 'MobileApplication'],
+      '@id': `${baseUrl}/#software`,
+      name: site.name,
+      description: pageDescription,
       applicationCategory: 'FinanceApplication',
-      operatingSystem: 'Android, iOS, Web',
-      url: 'https://contivoapp.com',
+      operatingSystem: 'Android, iOS',
+      url: baseUrl,
       image: ogImage,
+      softwareVersion: site.version,
+      isAccessibleForFree: true,
       offers: {
         '@type': 'Offer',
         price: '0',
         priceCurrency: 'EUR',
+        availability: 'https://schema.org/PreOrder',
       },
-      publisher: { '@id': 'https://contivoapp.com/#organization' },
+      publisher: { '@id': `${baseUrl}/#organization` },
+      inLanguage: ['ru', 'en', 'de'],
     },
   ],
 };
@@ -64,11 +94,16 @@ const schemaData = {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>{title}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content={pageDescription} />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="Contivo" />
+    <meta name="author" content={site.name} />
     <meta name="theme-color" content="#6d35d4" />
     <link rel="canonical" href={canonicalUrl} />
+
+    {languageAlternates.map((item) => (
+      <link rel="alternate" hreflang={item.lang} href={item.href} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={defaultAlternateUrl} />
 
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/icon.png" />
@@ -77,15 +112,19 @@ const schemaData = {
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={site.name} />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={pageDescription} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content={ogLocales[lang] ?? 'ru_RU'} />
+    {languages.filter((item) => item.code !== lang).map((item) => (
+      <meta property="og:locale:alternate" content={ogLocales[item.code]} />
+    ))}
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:description" content={pageDescription} />
     <meta name="twitter:image" content={ogImage} />
 
     <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
