@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://contivoapp.com/</loc>
+    <loc>https://contivoapp.com</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -31,32 +31,32 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://contivoapp.com/en/</loc>
+    <loc>https://contivoapp.com/ru/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://contivoapp.com/en/help/</loc>
+    <loc>https://contivoapp.com/ru/help/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://contivoapp.com/en/news/</loc>
+    <loc>https://contivoapp.com/ru/news/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://contivoapp.com/en/contact/</loc>
+    <loc>https://contivoapp.com/ru/contact/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://contivoapp.com/en/privacy/</loc>
+    <loc>https://contivoapp.com/ru/privacy/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://contivoapp.com/en/terms/</loc>
+    <loc>https://contivoapp.com/ru/terms/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

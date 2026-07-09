@@ -3,13 +3,13 @@ import '../styles/global.css';
 import { site, text, languages, pathFor } from '../content/site.js';
 
 const {
-  lang = 'ru',
+  lang = 'en',
   title = `${site.name} — финансы, бюджеты и отчёты`,
   description,
   currentPath = '/',
 } = Astro.props;
 
-const t = text[lang] ?? text.ru;
+const t = text[lang] ?? text.en;
 const pageDescription = description ?? t.home?.description ?? 'Contivo helps manage finances, budgets, goals and reports.';
 const analyticsId = 'G-KVYG4BB9QT';
 const baseUrl = 'https://contivoapp.com';
@@ -21,7 +21,7 @@ const languageAlternates = languages.map((item) => ({
   href: `${baseUrl}${pathFor(item.code, currentPath)}`,
 }));
 
-const defaultAlternateUrl = `${baseUrl}${pathFor('ru', currentPath)}`;
+const defaultAlternateUrl = `${baseUrl}${pathFor('en', currentPath)}`;
 
 const ogLocales = {
   ru: 'ru_RU',
@@ -117,7 +117,7 @@ const schemaData = {
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content={ogLocales[lang] ?? 'ru_RU'} />
+    <meta property="og:locale" content={ogLocales[lang] ?? 'en_US'} />
     {languages.filter((item) => item.code !== lang).map((item) => (
       <meta property="og:locale:alternate" content={ogLocales[item.code]} />
     ))}
