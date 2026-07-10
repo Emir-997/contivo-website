@@ -1,0 +1,10 @@
+---
+import Layout from '../_layout.astro';
+import FaqPage from '../../components/FaqPage.astro';
+import { faqContent } from '../../content/faq.js';
+const lang = 'de';
+const faq = faqContent[lang];
+---
+<Layout lang={lang} currentPath="/faq" title={`${faq.pageTitle} — Contivo`} description={faq.pageDescription}>
+  <FaqPage lang={lang} />
+</Layout>

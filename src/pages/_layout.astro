@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { site, text, languages, pathFor } from '../content/site.js';
+import { footerContent } from '../content/faq.js';
 
 const {
   lang = 'en',
@@ -10,6 +11,7 @@ const {
 } = Astro.props;
 
 const t = text[lang] ?? text.en;
+const footer = footerContent[lang] ?? footerContent.en;
 const pageDescription = description ?? t.home?.description ?? 'Contivo helps manage finances, budgets, goals and reports.';
 const analyticsId = 'G-KVYG4BB9QT';
 const baseUrl = 'https://contivoapp.com';
@@ -179,15 +181,48 @@ const schemaData = {
       </div>
     </header>
     <slot />
-    <footer class="footer">
-      <div class="container footer-grid">
-        <div>© {new Date().getFullYear()} {site.name}. {t.footer.rights}</div>
-        <div class="footer-links">
-          <a href={pathFor(lang, '/privacy')}>{t.footer.privacy}</a>
-          <a href={pathFor(lang, '/terms')}>{t.footer.terms}</a>
-          <a href={pathFor(lang, '/help')}>{t.footer.help}</a>
-          <a href={pathFor(lang, '/contact')}>{t.footer.contact}</a>
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a class="footer-logo" href={pathFor(lang, '/')} aria-label="Contivo home">
+            <img src="/contivo-brand/logo.png" alt="" width="48" height="48" />
+            <span>{site.name}</span>
+          </a>
+          <p>{footer.tagline}</p>
+          <a class="footer-email" href={`mailto:${site.supportEmail}`}>{site.supportEmail}</a>
         </div>
+
+        <div class="footer-column">
+          <h2>{footer.navigation}</h2>
+          <a href={pathFor(lang, '/')}>{footer.home}</a>
+          <a href={pathFor(lang, '/help')}>{footer.help}</a>
+          <a href={pathFor(lang, '/news')}>{footer.news}</a>
+          <a href={pathFor(lang, '/contact')}>{footer.contact}</a>
+        </div>
+
+        <div class="footer-column">
+          <h2>{footer.legal}</h2>
+          <a href={pathFor(lang, '/privacy')}>{footer.privacy}</a>
+          <a href={pathFor(lang, '/terms')}>{footer.terms}</a>
+          <a href={pathFor(lang, '/faq')}>{footer.faq}</a>
+          <a href={pathFor(lang, '/contact')}>{footer.support}</a>
+        </div>
+
+        <div class="footer-column footer-resources">
+          <h2>{footer.resources}</h2>
+          <span>{footer.play}</span>
+          <span>{footer.store}</span>
+          <label for="footer-language">{footer.language}</label>
+          <select id="footer-language" class="language-select footer-language-select" aria-label={footer.language} onchange="window.location.href=this.value">
+            {languages.map((item) => (
+              <option value={pathFor(item.code, currentPath)} selected={item.code === lang}>{item.label}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© {new Date().getFullYear()} {site.name}. {footer.rights}</span>
+        <span>{footer.version}</span>
       </div>
     </footer>
   </body>

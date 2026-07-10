@@ -1,0 +1,38 @@
+---
+import { faqContent } from '../content/faq.js';
+import { pathFor } from '../content/site.js';
+const { lang = 'en' } = Astro.props;
+const faq = faqContent[lang] ?? faqContent.en;
+const featured = faq.items.slice(0, 6);
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: featured.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
+---
+<section class="home-faq-section" aria-labelledby="home-faq-title">
+  <div class="container home-faq-layout">
+    <div class="home-faq-intro">
+      <span class="section-eyebrow">{faq.eyebrow}</span>
+      <h2 id="home-faq-title">{faq.title}</h2>
+      <p>{faq.intro}</p>
+      <a class="btn btn-secondary home-faq-link" href={pathFor(lang, '/faq')}>{faq.viewAll}</a>
+    </div>
+    <div class="faq-accordion">
+      {featured.map((item, index) => (
+        <details class="faq-item" open={index === 0}>
+          <summary>
+            <span>{item.q}</span>
+            <span class="faq-plus" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer"><p>{item.a}</p></div>
+        </details>
+      ))}
+    </div>
+  </div>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+</section>

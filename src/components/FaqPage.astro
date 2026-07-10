@@ -1,0 +1,29 @@
+---
+import { faqContent } from '../content/faq.js';
+const { lang = 'en' } = Astro.props;
+const faq = faqContent[lang] ?? faqContent.en;
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.items.map((item) => ({
+    '@type': 'Question', name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
+---
+<main class="faq-page page-shell">
+  <section class="container faq-page-header">
+    <span class="section-eyebrow">FAQ</span>
+    <h1>{faq.pageTitle}</h1>
+    <p>{faq.pageDescription}</p>
+  </section>
+  <section class="container faq-page-list" aria-label={faq.pageTitle}>
+    {faq.items.map((item, index) => (
+      <details class="faq-item" open={index === 0}>
+        <summary><span>{item.q}</span><span class="faq-plus" aria-hidden="true"></span></summary>
+        <div class="faq-answer"><p>{item.a}</p></div>
+      </details>
+    ))}
+  </section>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+</main>
