@@ -1,0 +1,71 @@
+---
+const { lang = 'en' } = Astro.props;
+
+const copy = {
+  en: {
+    eyebrow: 'See Contivo in action',
+    title: 'A clear view of your money',
+    body: 'From everyday transactions to long-term planning, Contivo keeps your financial picture simple and easy to understand.',
+    items: [
+      { tag: 'Overview', title: 'Everything important at a glance', text: 'See balances, income and expenses in one clean dashboard.', image: '/app-screenshots/showcase/overview.webp', alt: 'Contivo finance overview screen' },
+      { tag: 'Statistics', title: 'Understand where your money goes', text: 'Explore clear visual reports by category and selected period.', image: '/app-screenshots/showcase/statistics.webp', alt: 'Contivo statistics screen with category chart' },
+      { tag: 'Comparison', title: 'Compare progress over time', text: 'Review yearly results and spot changes in income and expenses.', image: '/app-screenshots/showcase/comparison.webp', alt: 'Contivo yearly comparison report' },
+      { tag: 'Planning', title: 'Plan the month before it begins', text: 'Set category limits and keep planned spending under control.', image: '/app-screenshots/showcase/planning.webp', alt: 'Contivo monthly budget planning screen' },
+    ],
+  },
+  ru: {
+    eyebrow: 'Contivo в действии',
+    title: 'Ваши финансы — понятно и наглядно',
+    body: 'От ежедневных операций до долгосрочного планирования — Contivo помогает легко понимать общую финансовую картину.',
+    items: [
+      { tag: 'Обзор', title: 'Главное всегда перед глазами', text: 'Смотрите баланс, доходы и расходы на одном понятном экране.', image: '/app-screenshots/showcase/overview.webp', alt: 'Экран финансового обзора Contivo' },
+      { tag: 'Статистика', title: 'Понимайте, куда уходят деньги', text: 'Изучайте наглядные отчёты по категориям и выбранным периодам.', image: '/app-screenshots/showcase/statistics.webp', alt: 'Экран статистики Contivo с диаграммой категорий' },
+      { tag: 'Сравнение', title: 'Сравнивайте результаты по годам', text: 'Следите за изменениями доходов и расходов с течением времени.', image: '/app-screenshots/showcase/comparison.webp', alt: 'Годовое сравнение в Contivo' },
+      { tag: 'Планирование', title: 'Планируйте месяц заранее', text: 'Устанавливайте лимиты по категориям и контролируйте запланированные расходы.', image: '/app-screenshots/showcase/planning.webp', alt: 'Экран месячного планирования бюджета Contivo' },
+    ],
+  },
+  de: {
+    eyebrow: 'Contivo in Aktion',
+    title: 'Deine Finanzen klar im Blick',
+    body: 'Von täglichen Transaktionen bis zur langfristigen Planung hält Contivo dein finanzielles Gesamtbild einfach und verständlich.',
+    items: [
+      { tag: 'Übersicht', title: 'Alles Wichtige auf einen Blick', text: 'Sieh Saldo, Einnahmen und Ausgaben in einer klaren Übersicht.', image: '/app-screenshots/showcase/overview.webp', alt: 'Contivo Finanzübersicht' },
+      { tag: 'Statistiken', title: 'Verstehe, wohin dein Geld fließt', text: 'Entdecke übersichtliche Auswertungen nach Kategorie und Zeitraum.', image: '/app-screenshots/showcase/statistics.webp', alt: 'Contivo Statistik mit Kategoriediagramm' },
+      { tag: 'Vergleich', title: 'Vergleiche deine Entwicklung', text: 'Prüfe Jahresergebnisse und erkenne Veränderungen bei Einnahmen und Ausgaben.', image: '/app-screenshots/showcase/comparison.webp', alt: 'Contivo Jahresvergleich' },
+      { tag: 'Planung', title: 'Plane den Monat im Voraus', text: 'Lege Kategorienlimits fest und behalte geplante Ausgaben unter Kontrolle.', image: '/app-screenshots/showcase/planning.webp', alt: 'Contivo monatliche Budgetplanung' },
+    ],
+  },
+}[lang];
+---
+<section class="showcase-section" id="showcase" aria-labelledby="showcase-title">
+  <div class="container">
+    <header class="showcase-heading">
+      <span class="section-eyebrow">{copy.eyebrow}</span>
+      <h2 id="showcase-title">{copy.title}</h2>
+      <p>{copy.body}</p>
+    </header>
+
+    <div class="showcase-grid">
+      {copy.items.map((item, index) => (
+        <article class={`showcase-card showcase-card-${index + 1}`}>
+          <div class="showcase-copy">
+            <span class="showcase-tag">{item.tag}</span>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </div>
+          <div class="showcase-device" aria-hidden="true">
+            <div class="showcase-speaker"></div>
+            <img
+              src={item.image}
+              alt={item.alt}
+              width="1004"
+              height="2048"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

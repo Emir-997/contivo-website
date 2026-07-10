@@ -2,6 +2,7 @@
 import Layout from './_layout.astro';
 import HomeHero from '../components/HomeHero.astro';
 import HomeFeatures from '../components/HomeFeatures.astro';
+import HomeShowcase from '../components/HomeShowcase.astro';
 import { text } from '../content/site.js';
 const lang = 'en';
 const t = text[lang];
@@ -9,4 +10,5 @@ const t = text[lang];
 <Layout lang={lang} currentPath="/" title={t.home.title} description={t.home.description}>
   <HomeHero lang={lang} />
   <HomeFeatures lang={lang} />
+  <HomeShowcase lang={lang} />
 </Layout>
