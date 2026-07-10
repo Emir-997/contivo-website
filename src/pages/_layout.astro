@@ -149,7 +149,7 @@ const schemaData = {
         <nav class="nav-links" aria-label="Primary navigation">
           {nav.map((item) => <a href={item.href}>{item.label}</a>)}
         </nav>
-        <div class="nav-actions">
+        <div class="nav-actions desktop-nav-actions">
           <select class="language-select" aria-label="Language" onchange="window.location.href=this.value">
             {languages.map((item) => (
               <option value={pathFor(item.code, currentPath)} selected={item.code === lang}>{item.label}</option>
@@ -157,6 +157,25 @@ const schemaData = {
           </select>
           <a class="btn btn-primary header-support" href={pathFor(lang, '/contact')}>{t.nav.support}</a>
         </div>
+
+        <details class="mobile-menu">
+          <summary class="mobile-menu-toggle" aria-label="Open navigation menu">
+            <span class="mobile-menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+          </summary>
+          <div class="mobile-menu-panel">
+            <nav class="mobile-menu-links" aria-label="Mobile navigation">
+              {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+            </nav>
+            <div class="mobile-menu-actions">
+              <select class="language-select mobile-language-select" aria-label="Language" onchange="window.location.href=this.value">
+                {languages.map((item) => (
+                  <option value={pathFor(item.code, currentPath)} selected={item.code === lang}>{item.label}</option>
+                ))}
+              </select>
+              <a class="btn btn-primary mobile-support" href={pathFor(lang, '/contact')}>{t.nav.support}</a>
+            </div>
+          </div>
+        </details>
       </div>
     </header>
     <slot />
