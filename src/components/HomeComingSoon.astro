@@ -1,0 +1,124 @@
+---
+const { lang = 'en' } = Astro.props;
+
+const copy = {
+  en: {
+    eyebrow: 'What is next',
+    title: 'Contivo keeps growing with you',
+    body: 'Finance is only the beginning. Calendar and Tasks will bring planning, routines and everyday organization into the same app.',
+    badge: 'Coming soon',
+    items: [
+      {
+        icon: 'calendar',
+        kicker: 'Calendar',
+        title: 'Plan your time in one clear place',
+        text: 'Organize appointments, personal events and shared plans without leaving Contivo.',
+        points: ['Daily and monthly views', 'Personal and shared events', 'Helpful reminders'],
+      },
+      {
+        icon: 'tasks',
+        kicker: 'Tasks',
+        title: 'Turn plans into completed actions',
+        text: 'Capture tasks, set priorities and keep important things visible until they are done.',
+        points: ['Simple task lists', 'Priorities and deadlines', 'Shared responsibilities'],
+      },
+    ],
+    noteTitle: 'One app for everyday life',
+    noteText: 'Future modules will work together while keeping Contivo simple, focused and easy to use.',
+  },
+  ru: {
+    eyebrow: 'Что дальше',
+    title: 'Contivo развивается вместе с вами',
+    body: 'Финансы — только начало. Календарь и задачи объединят планирование, привычки и повседневную организацию в одном приложении.',
+    badge: 'Скоро',
+    items: [
+      {
+        icon: 'calendar',
+        kicker: 'Календарь',
+        title: 'Планируйте время в одном понятном месте',
+        text: 'Организуйте встречи, личные события и совместные планы, не выходя из Contivo.',
+        points: ['Просмотр дня и месяца', 'Личные и совместные события', 'Полезные напоминания'],
+      },
+      {
+        icon: 'tasks',
+        kicker: 'Задачи',
+        title: 'Превращайте планы в выполненные дела',
+        text: 'Записывайте задачи, расставляйте приоритеты и не теряйте важные дела из виду.',
+        points: ['Простые списки задач', 'Приоритеты и сроки', 'Совместные обязанности'],
+      },
+    ],
+    noteTitle: 'Одно приложение для повседневной жизни',
+    noteText: 'Будущие модули будут работать вместе, сохраняя Contivo простым, понятным и удобным.',
+  },
+  de: {
+    eyebrow: 'Was als Nächstes kommt',
+    title: 'Contivo wächst mit deinem Alltag',
+    body: 'Finanzen sind erst der Anfang. Kalender und Aufgaben verbinden Planung, Routinen und tägliche Organisation in einer App.',
+    badge: 'Demnächst',
+    items: [
+      {
+        icon: 'calendar',
+        kicker: 'Kalender',
+        title: 'Plane deine Zeit an einem klaren Ort',
+        text: 'Organisiere Termine, persönliche Ereignisse und gemeinsame Pläne direkt in Contivo.',
+        points: ['Tages- und Monatsansicht', 'Persönliche und gemeinsame Termine', 'Hilfreiche Erinnerungen'],
+      },
+      {
+        icon: 'tasks',
+        kicker: 'Aufgaben',
+        title: 'Mach aus Plänen erledigte Aufgaben',
+        text: 'Erfasse Aufgaben, setze Prioritäten und behalte Wichtiges im Blick, bis es erledigt ist.',
+        points: ['Einfache Aufgabenlisten', 'Prioritäten und Fristen', 'Gemeinsame Verantwortlichkeiten'],
+      },
+    ],
+    noteTitle: 'Eine App für den Alltag',
+    noteText: 'Künftige Module arbeiten zusammen, während Contivo einfach, fokussiert und leicht bedienbar bleibt.',
+  },
+}[lang];
+
+const icons = {
+  calendar: '<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>',
+  tasks: '<rect x="3" y="4" width="18" height="16" rx="3"/><path d="m7 10 2 2 4-4M15 10h2M7 16h6M15 16h2"/>',
+};
+---
+<section class="coming-soon-section" id="coming-soon" aria-labelledby="coming-soon-title">
+  <div class="container">
+    <header class="coming-soon-heading">
+      <span class="section-eyebrow">{copy.eyebrow}</span>
+      <h2 id="coming-soon-title">{copy.title}</h2>
+      <p>{copy.body}</p>
+    </header>
+
+    <div class="coming-soon-grid">
+      {copy.items.map((item, index) => (
+        <article class={`future-card future-card-${index + 1}`}>
+          <div class="future-card-top">
+            <div class="future-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" set:html={icons[item.icon]} />
+            </div>
+            <span class="future-badge">{copy.badge}</span>
+          </div>
+          <span class="future-kicker">{item.kicker}</span>
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+          <ul>
+            {item.points.map((point) => (
+              <li><span aria-hidden="true">✓</span>{point}</li>
+            ))}
+          </ul>
+          <div class="future-decoration" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <aside class="future-note">
+      <div class="future-note-mark" aria-hidden="true">C</div>
+      <div>
+        <h3>{copy.noteTitle}</h3>
+        <p>{copy.noteText}</p>
+      </div>
+    </aside>
+  </div>
+</section>

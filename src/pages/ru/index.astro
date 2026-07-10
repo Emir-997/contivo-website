@@ -3,6 +3,7 @@ import Layout from '../_layout.astro';
 import HomeHero from '../../components/HomeHero.astro';
 import HomeFeatures from '../../components/HomeFeatures.astro';
 import HomeShowcase from '../../components/HomeShowcase.astro';
+import HomeComingSoon from '../../components/HomeComingSoon.astro';
 import { text } from '../../content/site.js';
 const lang = 'ru';
 const t = text[lang];
@@ -11,4 +12,5 @@ const t = text[lang];
   <HomeHero lang={lang} />
   <HomeFeatures lang={lang} />
   <HomeShowcase lang={lang} />
+  <HomeComingSoon lang={lang} />
 </Layout>
