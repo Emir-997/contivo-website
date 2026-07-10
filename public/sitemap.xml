@@ -1,92 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://contivoapp.com</loc>
+    <loc>https://contivoapp.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/help/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/help/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/help/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/help/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/help/" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/news/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/news/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/news/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/news/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/news/" />
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/contact/" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/privacy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/privacy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/privacy/" />
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/terms/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/terms/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/terms/" />
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/ru/help/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/help/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/help/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/help/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/help/" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/ru/news/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/news/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/news/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/news/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/news/" />
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/ru/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/contact/" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/ru/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/privacy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/privacy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/privacy/" />
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/ru/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/terms/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/terms/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/terms/" />
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/de/help/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/help/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/help/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/help/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/help/" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/de/news/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/news/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/news/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/news/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/news/" />
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/de/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/contact/" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/de/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/privacy/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/privacy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/privacy/" />
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/de/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/terms/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/terms/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/terms/" />
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
