@@ -1,0 +1,78 @@
+---
+const { lang = 'en' } = Astro.props;
+
+const copy = {
+  en: {
+    eyebrow: 'Everything in one place',
+    title: 'Built for everyday money decisions',
+    body: 'Contivo combines the tools you need to understand, plan and manage your finances without unnecessary complexity.',
+    items: [
+      { icon: 'wallet', title: 'Flexible budgets', text: 'Create personal or shared budgets and keep every part of your financial life organized.' },
+      { icon: 'chart', title: 'Reports & statistics', text: 'See clear monthly, yearly and custom-period insights with useful visual reports.' },
+      { icon: 'target', title: 'Financial goals', text: 'Plan savings, track progress and keep goals separate from everyday expenses.' },
+      { icon: 'people', title: 'Shared finances', text: 'Invite family members, assign roles and manage a common budget together.' },
+      { icon: 'globe', title: 'Multi-language', text: 'Use Contivo in English, German or Russian, with more languages planned.' },
+      { icon: 'cloud', title: 'Cloud synchronization', text: 'Keep your information securely synchronized and available across your devices.' },
+    ],
+  },
+  ru: {
+    eyebrow: 'Всё в одном месте',
+    title: 'Для ежедневного управления финансами',
+    body: 'Contivo объединяет инструменты, которые помогают понимать, планировать и контролировать финансы без лишней сложности.',
+    items: [
+      { icon: 'wallet', title: 'Гибкие бюджеты', text: 'Создавайте личные и совместные бюджеты и удобно разделяйте разные части финансовой жизни.' },
+      { icon: 'chart', title: 'Отчёты и статистика', text: 'Изучайте понятные отчёты за месяц, год или любой выбранный период.' },
+      { icon: 'target', title: 'Финансовые цели', text: 'Планируйте накопления, следите за прогрессом и отделяйте цели от обычных расходов.' },
+      { icon: 'people', title: 'Совместные финансы', text: 'Приглашайте членов семьи, назначайте роли и ведите общий бюджет вместе.' },
+      { icon: 'globe', title: 'Несколько языков', text: 'Используйте Contivo на английском, немецком или русском. Позже появятся новые языки.' },
+      { icon: 'cloud', title: 'Облачная синхронизация', text: 'Храните данные безопасно и получайте доступ к ним на разных устройствах.' },
+    ],
+  },
+  de: {
+    eyebrow: 'Alles an einem Ort',
+    title: 'Für deine täglichen Finanzentscheidungen',
+    body: 'Contivo verbindet die Werkzeuge, mit denen du deine Finanzen ohne unnötige Komplexität verstehen, planen und verwalten kannst.',
+    items: [
+      { icon: 'wallet', title: 'Flexible Budgets', text: 'Erstelle persönliche oder gemeinsame Budgets und organisiere alle Bereiche deiner Finanzen.' },
+      { icon: 'chart', title: 'Berichte & Statistiken', text: 'Erhalte klare Auswertungen für Monate, Jahre oder frei gewählte Zeiträume.' },
+      { icon: 'target', title: 'Finanzielle Ziele', text: 'Plane Ersparnisse, verfolge Fortschritte und trenne Ziele von alltäglichen Ausgaben.' },
+      { icon: 'people', title: 'Gemeinsame Finanzen', text: 'Lade Familienmitglieder ein, vergib Rollen und verwalte ein gemeinsames Budget.' },
+      { icon: 'globe', title: 'Mehrsprachig', text: 'Nutze Contivo auf Englisch, Deutsch oder Russisch. Weitere Sprachen sind geplant.' },
+      { icon: 'cloud', title: 'Cloud-Synchronisierung', text: 'Halte deine Informationen sicher synchronisiert und auf mehreren Geräten verfügbar.' },
+    ],
+  },
+}[lang];
+
+const icons = {
+  wallet: '<path d="M4 7.5A2.5 2.5 0 0 1 6.5 5H18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6.5A2.5 2.5 0 0 1 4 16.5v-9Z"/><path d="M16 10h4v4h-4a2 2 0 1 1 0-4Z"/>',
+  chart: '<path d="M4 19V5"/><path d="M4 19h16"/><path d="m7 15 4-4 3 2 5-6"/>',
+  target: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 2v2M22 12h-2M12 22v-2M2 12h2"/>',
+  people: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/>',
+  cloud: '<path d="M17.5 19H7a5 5 0 1 1 1.5-9.77A6 6 0 0 1 20 11a4 4 0 0 1-2.5 8Z"/><path d="m9 14 3-3 3 3M12 11v6"/>',
+};
+---
+<section class="features-section" id="features" aria-labelledby="features-title">
+  <div class="container">
+    <div class="features-heading">
+      <div>
+        <span class="section-eyebrow">{copy.eyebrow}</span>
+        <h2 id="features-title">{copy.title}</h2>
+      </div>
+      <p>{copy.body}</p>
+    </div>
+
+    <div class="features-grid">
+      {copy.items.map((item, index) => (
+        <article class="feature-card" style={`--feature-delay:${index * 70}ms`}>
+          <div class={`feature-icon feature-icon-${index + 1}`} aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" set:html={icons[item.icon]} />
+          </div>
+          <span class="feature-number">0{index + 1}</span>
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
