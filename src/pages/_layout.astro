@@ -140,13 +140,13 @@ const schemaData = {
     </script>
   </head>
   <body>
-    <header class="header">
+    <header class="header site-header">
       <div class="container navbar">
-        <a class="logo" href={pathFor(lang, '/')}> 
-          <img class="logo-img" src="/logo.png" alt="Contivo logo" />
+        <a class="logo" href={pathFor(lang, '/')} aria-label="Contivo home">
+          <img class="logo-img" src="/contivo-brand/logo.png" alt="" width="42" height="42" />
           <span>{site.name}</span>
         </a>
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Primary navigation">
           {nav.map((item) => <a href={item.href}>{item.label}</a>)}
         </nav>
         <div class="nav-actions">
@@ -155,7 +155,7 @@ const schemaData = {
               <option value={pathFor(item.code, currentPath)} selected={item.code === lang}>{item.label}</option>
             ))}
           </select>
-          <a class="btn btn-primary" href={pathFor(lang, '/contact')}>{t.nav.support}</a>
+          <a class="btn btn-primary header-support" href={pathFor(lang, '/contact')}>{t.nav.support}</a>
         </div>
       </div>
     </header>

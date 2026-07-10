@@ -1,61 +1,10 @@
 ---
 import Layout from '../_layout.astro';
-import { site, text } from '../../content/site.js';
+import HomeHero from '../../components/HomeHero.astro';
+import { text } from '../../content/site.js';
 const lang = 'de';
 const t = text[lang];
 ---
 <Layout lang={lang} currentPath="/" title={t.home.title} description={t.home.description}>
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="badge">{t.home.badge}</div>
-          <h1>{t.home.h1}</h1>
-          <p class="lead">{t.home.lead}</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href={site.googlePlayUrl}>{t.home.play}</a>
-            <a class="btn btn-secondary" href={site.appStoreUrl}>{t.home.store}</a>
-          </div>
-        </div>
-        <div class="phone-card">
-          <div class="phone-screen">
-            <div class="app-top">
-              <div>{t.home.activeBudget}</div>
-              <h2>{t.home.familyBudget}</h2>
-              <div class="app-balance">3 520 €</div>
-              <small>{t.home.totalBalance}</small>
-            </div>
-            <div class="stat-row">
-              <div class="mini-card">{t.home.income}<strong>4 200 €</strong></div>
-              <div class="mini-card">{t.home.expense}<strong>680 €</strong></div>
-            </div>
-            <div class="card" style="margin-top:16px; box-shadow:none;">
-              <h3>{t.home.latest}</h3>
-              <p>{t.home.rent} · −850 €</p>
-              <p>{t.home.salary} · +3 200 €</p>
-              <p>{t.home.groceries} · −72 €</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">{t.home.featuresTitle}</h2>
-        <p class="section-subtitle">{t.home.featuresSubtitle}</p>
-        <div class="grid-3">
-          <div class="card"><h3>{t.home.budgetsTitle}</h3><p>{t.home.budgetsText}</p></div>
-          <div class="card"><h3>{t.home.goalsTitle}</h3><p>{t.home.goalsText}</p></div>
-          <div class="card"><h3>{t.home.reportsTitle}</h3><p>{t.home.reportsText}</p></div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container page-card">
-        <h2 class="section-title">{t.home.soonTitle}</h2>
-        <p class="section-subtitle">{t.home.soonText}</p>
-        <a class="btn btn-primary" href="/de/news">{t.home.soonButton}</a>
-      </div>
-    </section>
-  </main>
+  <HomeHero lang={lang} />
 </Layout>

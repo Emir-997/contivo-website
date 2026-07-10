@@ -1,0 +1,116 @@
+---
+import { site, text, pathFor } from '../content/site.js';
+
+const { lang = 'en' } = Astro.props;
+const t = text[lang];
+const copy = {
+  en: {
+    eyebrow: 'Personal finance, made simple',
+    title: 'Control your life',
+    body: 'Track income and expenses, plan budgets and understand your money with one clear, modern app.',
+    available: 'Mobile apps coming soon',
+    previewAlt: 'Contivo finance overview screen',
+    trust: ['Clear overview', 'Flexible budgets', 'Useful reports'],
+  },
+  ru: {
+    eyebrow: 'Личные финансы — просто и понятно',
+    title: 'Контролируй свою жизнь',
+    body: 'Следите за доходами и расходами, планируйте бюджеты и понимайте свои финансы в одном современном приложении.',
+    available: 'Мобильные приложения скоро',
+    previewAlt: 'Экран финансового обзора Contivo',
+    trust: ['Понятный обзор', 'Гибкие бюджеты', 'Полезные отчёты'],
+  },
+  de: {
+    eyebrow: 'Persönliche Finanzen, einfach gemacht',
+    title: 'Kontrolliere dein Leben',
+    body: 'Behalte Einnahmen und Ausgaben im Blick, plane Budgets und verstehe deine Finanzen mit einer klaren, modernen App.',
+    available: 'Mobile Apps folgen bald',
+    previewAlt: 'Contivo Finanzübersicht',
+    trust: ['Klare Übersicht', 'Flexible Budgets', 'Nützliche Berichte'],
+  },
+}[lang];
+---
+<main>
+  <section class="landing-hero">
+    <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+    <div class="container landing-hero-grid">
+      <div class="landing-copy">
+        <div class="hero-brand-chip">
+          <img src="/contivo-brand/logo.png" alt="" width="42" height="42" />
+          <span>{copy.eyebrow}</span>
+        </div>
+
+        <h1>{copy.title}</h1>
+        <p class="landing-lead">{copy.body}</p>
+
+        <div class="store-actions" aria-label={copy.available}>
+          <a class="store-button" href={site.googlePlayUrl} aria-disabled="true">
+            <span class="store-icon" aria-hidden="true">▶</span>
+            <span><small>{copy.available}</small><strong>Google Play</strong></span>
+          </a>
+          <a class="store-button store-button-light" href={site.appStoreUrl} aria-disabled="true">
+            <span class="store-icon apple" aria-hidden="true">●</span>
+            <span><small>{copy.available}</small><strong>App Store</strong></span>
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          {copy.trust.map((item) => <span><b aria-hidden="true">✓</b>{item}</span>)}
+        </div>
+      </div>
+
+      <div class="hero-device-stage" aria-label={copy.previewAlt}>
+        <div class="device-orbit orbit-one" aria-hidden="true"></div>
+        <div class="device-orbit orbit-two" aria-hidden="true"></div>
+        <div class="floating-note note-balance" aria-hidden="true">
+          <span>€</span>
+          <div><small>Total balance</small><strong>€1,792.40</strong></div>
+        </div>
+        <div class="floating-note note-report" aria-hidden="true">
+          <span>↗</span>
+          <div><small>Reports</small><strong>Clear insights</strong></div>
+        </div>
+        <div class="phone-shell">
+          <div class="phone-speaker" aria-hidden="true"></div>
+          <img
+            src="/app-screenshots/finance-overview.jpg"
+            alt={copy.previewAlt}
+            width="864"
+            height="1728"
+            fetchpriority="high"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-followup">
+    <div class="container mini-feature-grid">
+      <article>
+        <span>01</span>
+        <h2>{t.home.budgetsTitle}</h2>
+        <p>{t.home.budgetsText}</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h2>{t.home.goalsTitle}</h2>
+        <p>{t.home.goalsText}</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h2>{t.home.reportsTitle}</h2>
+        <p>{t.home.reportsText}</p>
+      </article>
+    </div>
+    <div class="container release-strip">
+      <div>
+        <span class="release-dot" aria-hidden="true"></span>
+        <strong>{t.home.soonTitle}</strong>
+        <p>{t.home.soonText}</p>
+      </div>
+      <a class="text-link" href={pathFor(lang, '/news')}>{t.home.soonButton} →</a>
+    </div>
+  </section>
+</main>
