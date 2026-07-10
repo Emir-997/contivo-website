@@ -1,16 +1,10 @@
 ---
 import Layout from './_layout.astro';
-import { site, text } from '../content/site.js';
+import LegalPage from '../components/LegalPage.astro';
+import { legalText } from '../content/legal.js';
 const lang = 'en';
-const t = text[lang];
+const content = legalText[lang];
 ---
-<Layout lang={lang} currentPath="/terms" title={`${t.pages.termsTitle} — Contivo`}>
-  <main class="page"><div class="container page-card">
-    <h1>{t.pages.termsTitle}</h1>
-    <p>{t.pages.termsIntro}</p>
-    <h2>{t.pages.useTitle}</h2><p>{t.pages.useText}</p>
-    <h2>{t.pages.financeTitle}</h2><p>{t.pages.financeText}</p>
-    <h2>{t.pages.availabilityTitle}</h2><p>{t.pages.availabilityText}</p>
-    <h2>{t.pages.contactTitle}</h2><p><a href={`mailto:${site.supportEmail}`}>{site.supportEmail}</a>.</p>
-  </div></main>
+<Layout lang={lang} currentPath="/terms" title={`${content.terms.title} — Contivo`} description={content.terms.intro}>
+  <LegalPage {...content.terms} updated={content.common.updated} note={content.common.note} />
 </Layout>

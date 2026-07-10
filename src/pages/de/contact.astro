@@ -1,16 +1,11 @@
 ---
 import Layout from '../_layout.astro';
-import { site, text } from '../../content/site.js';
+import ContactPage from '../../components/ContactPage.astro';
+import { site } from '../../content/site.js';
+import { legalText } from '../../content/legal.js';
 const lang = 'de';
-const t = text[lang];
+const content = legalText[lang];
 ---
-<Layout lang={lang} currentPath="/contact" title={`${t.pages.contactTitle} — Contivo`}>
-  <main class="page"><div class="container page-card">
-    <h1>{t.pages.contactTitle}</h1>
-    <p>{t.pages.contactText}</p>
-    <h2>{t.pages.supportTitle}</h2>
-    <p><a class="btn btn-primary" href={`mailto:${site.supportEmail}?subject=Contivo Support`}>{site.supportEmail}</a></p>
-    <h2>{t.pages.privacyTitle}</h2>
-    <p><a href={`mailto:${site.privacyEmail}`}>{site.privacyEmail}</a></p>
-  </div></main>
+<Layout lang={lang} currentPath="/contact" title={`${content.contact.title} — Contivo`} description={content.contact.intro}>
+  <ContactPage content={content.contact} supportEmail={site.supportEmail} privacyEmail={site.privacyEmail} domain={site.domain} />
 </Layout>

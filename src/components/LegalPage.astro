@@ -1,0 +1,32 @@
+---
+const { eyebrow, title, intro, updated, sections, note } = Astro.props;
+---
+<main class="legal-page">
+  <section class="legal-hero">
+    <div class="container legal-hero-inner">
+      <span class="section-kicker">{eyebrow}</span>
+      <h1>{title}</h1>
+      <p>{intro}</p>
+      <div class="legal-meta"><span>{updated}</span><span>Contivo</span></div>
+    </div>
+  </section>
+
+  <section class="container legal-layout">
+    <aside class="legal-toc" aria-label="On this page">
+      <strong>{title}</strong>
+      <nav>
+        {sections.map(([heading], index) => <a href={`#section-${index + 1}`}>{heading}</a>)}
+      </nav>
+    </aside>
+
+    <article class="legal-content">
+      {sections.map(([heading, body], index) => (
+        <section id={`section-${index + 1}`} class="legal-section">
+          <h2>{heading}</h2>
+          <p>{body}</p>
+        </section>
+      ))}
+      <div class="legal-note">{note}</div>
+    </article>
+  </section>
+</main>

@@ -1,0 +1,38 @@
+---
+const { content, supportEmail, privacyEmail, domain } = Astro.props;
+---
+<main class="contact-page-modern">
+  <section class="legal-hero">
+    <div class="container legal-hero-inner">
+      <span class="section-kicker">{content.eyebrow}</span>
+      <h1>{content.title}</h1>
+      <p>{content.intro}</p>
+    </div>
+  </section>
+
+  <section class="container contact-cards-modern">
+    <article class="contact-card-modern">
+      <span class="contact-symbol">?</span>
+      <h2>{content.supportTitle}</h2>
+      <p>{content.supportText}</p>
+      <a href={`mailto:${supportEmail}?subject=Contivo Support`}>{supportEmail}</a>
+    </article>
+    <article class="contact-card-modern">
+      <span class="contact-symbol">◉</span>
+      <h2>{content.privacyTitle}</h2>
+      <p>{content.privacyText}</p>
+      <a href={`mailto:${privacyEmail}?subject=Contivo Privacy Request`}>{privacyEmail}</a>
+    </article>
+    <article class="contact-card-modern">
+      <span class="contact-symbol">↗</span>
+      <h2>{content.websiteTitle}</h2>
+      <p>{content.websiteText}</p>
+      <a href={`https://${domain}`}>{domain}</a>
+    </article>
+  </section>
+
+  <section class="container contact-note-modern">
+    <strong>{content.noteTitle}</strong>
+    <p>{content.noteText}</p>
+  </section>
+</main>
