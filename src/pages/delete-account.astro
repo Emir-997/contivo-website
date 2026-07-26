@@ -1,0 +1,10 @@
+---
+import Layout from './_layout.astro';
+import LegalPage from '../components/LegalPage.astro';
+import { legalText } from '../content/legal.js';
+const lang = 'en';
+const content = legalText[lang];
+---
+<Layout lang={lang} currentPath="/delete-account" title={`${content.deletion.title} — Contivo`} description={content.deletion.intro}>
+  <LegalPage {...content.deletion} updated={content.common.updated} note={content.common.note} />
+</Layout>

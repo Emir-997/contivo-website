@@ -162,4 +162,31 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://contivoapp.com/delete-account/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/delete-account/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/delete-account/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/delete-account/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/delete-account/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://contivoapp.com/ru/delete-account/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/delete-account/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/delete-account/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/delete-account/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/delete-account/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://contivoapp.com/de/delete-account/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/delete-account/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/delete-account/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/delete-account/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/delete-account/" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
