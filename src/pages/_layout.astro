@@ -11,19 +11,32 @@ const {
 } = Astro.props;
 
 const t = text[lang] ?? text.en;
+
+const normalizedCurrentPath = (() => {
+  const rawPath = currentPath || '/';
+  const withoutQuery = rawPath.split('?')[0].split('#')[0];
+  const withoutLanguagePrefix = withoutQuery.replace(/^\/(ru|de)(?=\/|$)/, '') || '/';
+  const withLeadingSlash = withoutLanguagePrefix.startsWith('/')
+    ? withoutLanguagePrefix
+    : `/${withoutLanguagePrefix}`;
+  if (withLeadingSlash === '/') return '/';
+  return withLeadingSlash.replace(/\/+$/, '');
+})();
+
+const localizedPathFor = (targetLang) => pathFor(targetLang, normalizedCurrentPath);
 const footer = footerContent[lang] ?? footerContent.en;
 const pageDescription = description ?? t.home?.description ?? 'Contivo helps manage finances, budgets, goals and reports.';
 const analyticsId = 'G-KVYG4BB9QT';
 const baseUrl = 'https://contivoapp.com';
-const canonicalUrl = `${baseUrl}${pathFor(lang, currentPath)}`;
+const canonicalUrl = `${baseUrl}${localizedPathFor(lang)}`;
 const ogImage = `${baseUrl}/og-image.png`;
 
 const languageAlternates = languages.map((item) => ({
   lang: item.code,
-  href: `${baseUrl}${pathFor(item.code, currentPath)}`,
+  href: `${baseUrl}${localizedPathFor(item.code)}`,
 }));
 
-const defaultAlternateUrl = `${baseUrl}${pathFor('en', currentPath)}`;
+const defaultAlternateUrl = `${baseUrl}${localizedPathFor('en')}`;
 
 const ogLocales = {
   ru: 'ru_RU',
@@ -154,7 +167,7 @@ const schemaData = {
         <div class="nav-actions desktop-nav-actions">
           <select class="language-select" aria-label="Language" onchange="window.location.href=this.value">
             {languages.map((item) => (
-              <option value={pathFor(item.code, currentPath)} selected={item.code === lang}>{item.label}</option>
+              <option value={localizedPathFor(item.code)} selected={item.code === lang}>{item.label}</option>
             ))}
           </select>
           <a class="btn btn-primary header-support" href={pathFor(lang, '/contact')}>{t.nav.support}</a>
@@ -171,7 +184,7 @@ const schemaData = {
             <div class="mobile-menu-actions">
               <select class="language-select mobile-language-select" aria-label="Language" onchange="window.location.href=this.value">
                 {languages.map((item) => (
-                  <option value={pathFor(item.code, currentPath)} selected={item.code === lang}>{item.label}</option>
+                  <option value={localizedPathFor(item.code)} selected={item.code === lang}>{item.label}</option>
                 ))}
               </select>
               <a class="btn btn-primary mobile-support" href={pathFor(lang, '/contact')}>{t.nav.support}</a>
@@ -216,7 +229,7 @@ const schemaData = {
           <label for="footer-language">{footer.language}</label>
           <select id="footer-language" class="language-select footer-language-select" aria-label={footer.language} onchange="window.location.href=this.value">
             {languages.map((item) => (
-              <option value={pathFor(item.code, currentPath)} selected={item.code === lang}>{item.label}</option>
+              <option value={localizedPathFor(item.code)} selected={item.code === lang}>{item.label}</option>
             ))}
           </select>
         </div>
