@@ -1,8 +1,8 @@
 export const site = {
   name: 'Contivo',
   domain: 'contivoapp.com',
-  supportEmail: 'support@contivoapp.com',
-  privacyEmail: 'privacy@contivoapp.com',
+  supportEmail: 'contivo.app@gmail.com',
+  privacyEmail: 'contivo.app@gmail.com',
   googlePlayUrl: '#',
   appStoreUrl: '#',
   version: '1.0.0',

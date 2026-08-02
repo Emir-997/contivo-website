@@ -13,10 +13,10 @@ export const faqContent = {
       { q: 'How do shared budgets work?', a: 'A budget owner can invite participants and assign owner, editor or viewer permissions. Members see and change information only according to their role and the budget settings.' },
       { q: 'What happens if the owner deletes the account?', a: 'Before account deletion, the owner must transfer ownership of shared budgets or other shared objects to another eligible participant, or delete those shared objects. This prevents other participants from losing access unexpectedly.' },
       { q: 'Are shared transactions deleted when a participant deletes an account?', a: 'Personal profile data is deleted or anonymized. Entries needed to keep another participant’s shared budget history complete may remain in a de-identified form.' },
-      { q: 'How do I delete my account?', a: 'Use Settings → Account → Delete account inside Contivo. If you cannot access the app, use the Account Deletion page on contivoapp.com or email privacy@contivoapp.com from the address connected to your account.' },
+      { q: 'How do I delete my account?', a: 'Use Settings → Account → Delete account inside Contivo. If you cannot access the app, use the Account Deletion page on contivoapp.com or email contivo.app@gmail.com from the address connected to your account.' },
       { q: 'What permissions does Contivo request?', a: 'Camera or photo-library access is requested only when you choose a profile image. Notification permission supports reminders, invitations and shared-budget updates. The current release does not request precise location, phone contacts or microphone access.' },
       { q: 'Does Contivo connect to my bank?', a: 'No. The current release is a manual finance-tracking tool and does not connect to a bank account or request card credentials.' },
-      { q: 'How can I contact support?', a: 'Email support@contivoapp.com. For privacy, data-access or deletion requests, email privacy@contivoapp.com.' },
+      { q: 'How can I contact support?', a: 'Email contivo.app@gmail.com. For privacy, data-access or deletion requests, email contivo.app@gmail.com.' },
       { q: 'Which languages are available?', a: 'The app supports English, German, Russian and Kyrgyz. The website currently provides English, German and Russian pages.' },
       { q: 'Will Calendar and Tasks be included?', a: 'Calendar and Tasks are planned for future versions. The first release focuses on a stable and complete Finance module.' }
     ]
@@ -35,10 +35,10 @@ export const faqContent = {
       { q: 'Как работают совместные бюджеты?', a: 'Владелец приглашает участников и назначает роли владельца, редактора или наблюдателя. Участники видят и изменяют данные только согласно своей роли и настройкам бюджета.' },
       { q: 'Что будет, если владелец удалит аккаунт?', a: 'Перед удалением владелец должен передать права на совместные бюджеты и другие общие объекты подходящему участнику либо удалить эти объекты. Это защищает остальных участников от неожиданной потери доступа.' },
       { q: 'Удалятся ли совместные операции после удаления участника?', a: 'Персональные данные профиля удаляются или обезличиваются. Записи, необходимые для сохранения полной истории совместного бюджета других участников, могут остаться в обезличенном виде.' },
-      { q: 'Как удалить аккаунт?', a: 'В приложении откройте Настройки → Аккаунт → Удалить аккаунт. Если доступ к приложению потерян, используйте страницу удаления на contivoapp.com или напишите с адреса аккаунта на privacy@contivoapp.com.' },
+      { q: 'Как удалить аккаунт?', a: 'В приложении откройте Настройки → Аккаунт → Удалить аккаунт. Если доступ к приложению потерян, используйте страницу удаления на contivoapp.com или напишите с адреса аккаунта на contivo.app@gmail.com.' },
       { q: 'Какие разрешения запрашивает Contivo?', a: 'Камера или галерея используются только при выборе фото профиля. Уведомления нужны для напоминаний, приглашений и изменений в совместных бюджетах. Текущая версия не запрашивает точную геолокацию, контакты телефона или микрофон.' },
       { q: 'Contivo подключается к банковскому счёту?', a: 'Нет. В текущей версии финансовые данные вводятся вручную; приложение не подключается к банку и не запрашивает реквизиты карты.' },
-      { q: 'Как связаться с поддержкой?', a: 'Напишите на support@contivoapp.com. Запросы по конфиденциальности, доступу к данным и удалению: privacy@contivoapp.com.' },
+      { q: 'Как связаться с поддержкой?', a: 'Напишите на contivo.app@gmail.com. Запросы по конфиденциальности, доступу к данным и удалению: contivo.app@gmail.com.' },
       { q: 'Какие языки доступны?', a: 'Приложение поддерживает английский, немецкий, русский и кыргызский. На сайте сейчас доступны английская, немецкая и русская версии.' },
       { q: 'Будут ли календарь и задачи?', a: 'Календарь и задачи запланированы для будущих версий. Первая версия сосредоточена на стабильном и полноценном модуле «Финансы».' }
     ]
@@ -57,10 +57,10 @@ export const faqContent = {
       { q: 'Wie funktionieren gemeinsame Budgets?', a: 'Eigentümer laden Teilnehmer ein und vergeben Rollen als Eigentümer, Bearbeiter oder Beobachter. Mitglieder sehen und ändern Daten nur gemäß ihrer Rolle und den Budgeteinstellungen.' },
       { q: 'Was passiert, wenn ein Eigentümer sein Konto löscht?', a: 'Vor der Löschung muss der Eigentümer gemeinsame Budgets oder andere gemeinsame Objekte an einen geeigneten Teilnehmer übertragen oder löschen. So verlieren andere Teilnehmer nicht unerwartet den Zugriff.' },
       { q: 'Werden gemeinsame Buchungen nach Kontolöschung entfernt?', a: 'Persönliche Profildaten werden gelöscht oder anonymisiert. Einträge, die für die vollständige gemeinsame Historie anderer Teilnehmer erforderlich sind, können anonymisiert bestehen bleiben.' },
-      { q: 'Wie lösche ich mein Konto?', a: 'Öffne in Contivo Einstellungen → Konto → Konto löschen. Falls kein App-Zugriff möglich ist, nutze die Löschseite auf contivoapp.com oder schreibe von der Konto-E-Mail an privacy@contivoapp.com.' },
+      { q: 'Wie lösche ich mein Konto?', a: 'Öffne in Contivo Einstellungen → Konto → Konto löschen. Falls kein App-Zugriff möglich ist, nutze die Löschseite auf contivoapp.com oder schreibe von der Konto-E-Mail an contivo.app@gmail.com.' },
       { q: 'Welche Berechtigungen verlangt Contivo?', a: 'Kamera oder Fotomediathek werden nur bei Auswahl eines Profilbildes genutzt. Benachrichtigungen unterstützen Erinnerungen, Einladungen und Aktualisierungen gemeinsamer Budgets. Die aktuelle Version verlangt keinen genauen Standort, keine Telefonkontakte und kein Mikrofon.' },
       { q: 'Verbindet sich Contivo mit meinem Bankkonto?', a: 'Nein. Die aktuelle Version verwendet manuell eingegebene Finanzdaten und verbindet sich nicht mit einem Bankkonto oder Kartendaten.' },
-      { q: 'Wie erreiche ich den Support?', a: 'Schreibe an support@contivoapp.com. Datenschutz-, Auskunfts- und Löschanfragen gehen an privacy@contivoapp.com.' },
+      { q: 'Wie erreiche ich den Support?', a: 'Schreibe an contivo.app@gmail.com. Datenschutz-, Auskunfts- und Löschanfragen gehen an contivo.app@gmail.com.' },
       { q: 'Welche Sprachen sind verfügbar?', a: 'Die App unterstützt Englisch, Deutsch, Russisch und Kirgisisch. Die Website ist derzeit auf Englisch, Deutsch und Russisch verfügbar.' },
       { q: 'Kommen Kalender und Aufgaben?', a: 'Kalender und Aufgaben sind für spätere Versionen geplant. Die erste Version konzentriert sich auf ein stabiles und vollständiges Finanzmodul.' }
     ]

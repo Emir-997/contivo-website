@@ -12,7 +12,7 @@ export const legalText = {
       title: 'Privacy Policy',
       intro: 'This Privacy Policy explains which personal data Contivo processes, why it is processed, how it is protected and which rights and choices you have.',
       sections: [
-        ['1. Controller and contact', 'Contivo is operated from Germany and is responsible for the processing described in this Privacy Policy. Privacy and data-protection requests can be sent to privacy@contivoapp.com. General support requests can be sent to support@contivoapp.com.'],
+        ['1. Controller and contact', 'Contivo is operated from Germany and is responsible for the processing described in this Privacy Policy. Privacy and data-protection requests can be sent to contivo.app@gmail.com. General support requests can be sent to contivo.app@gmail.com.'],
         ['2. Scope', 'This Privacy Policy applies to the Contivo mobile application for Android and iOS, the Contivo website at contivoapp.com and related support communications. It does not apply to third-party websites or services that have their own privacy notices.'],
         ['3. Account and profile data', 'When you create or use an account, Contivo may process your email address, authentication identifiers, display name, profile image, preferred language, account settings, active-budget selection and technical account metadata. Passwords are handled through the authentication provider and are not stored by Contivo in readable form.'],
         ['4. Financial and user-created content', 'Contivo processes the information you choose to enter, including budgets, currencies, categories, income and expense transactions, amounts, dates, notes, goals, savings and investment entries, plans, statistics settings and exported-report selections. Contivo does not connect to your bank account and does not process card or payment-account credentials for the finance-tracking features.'],
@@ -26,18 +26,18 @@ export const legalText = {
         ['12. International data transfers', 'Some service providers may process data outside Germany or the European Economic Area. Where required, transfers are protected through an adequacy decision, standard contractual clauses or another lawful transfer mechanism.'],
         ['13. Security', 'Contivo uses encrypted network connections and reasonable technical and organizational safeguards designed to protect data against unauthorized access, alteration, loss or disclosure. Access is limited according to account and budget roles. No internet-based system can guarantee absolute security, so you should protect your device, email account and login credentials.'],
         ['14. Retention', 'Account and app data are generally retained while your account is active and as needed to provide the service. Support messages and security records may be kept for a reasonable period to resolve requests, prevent abuse and establish or defend legal claims. Data may be retained longer when required by law. Local offline copies remain on a device until synchronized, deleted through the app, cleared from device storage or removed with the app.'],
-        ['15. Account deletion and shared data', 'You can initiate account deletion inside the Contivo app. You may also request deletion through the public Account Deletion page at contivoapp.com/delete-account or by emailing privacy@contivoapp.com from the address connected to your account. If you own a shared budget, calendar, task space or another shared object, deletion may be paused until you transfer ownership to another eligible participant or delete that shared object. This protects other participants from losing shared information unexpectedly. After deletion, personal profile data is deleted or anonymized unless retention is legally required. Transactions and audit-relevant entries that form part of another participant’s shared history may remain in a de-identified form so the shared records remain complete.'],
-        ['16. Your rights', 'Depending on applicable law, you may request access to your personal data, correction, deletion, restriction, portability or objection to certain processing. Where processing is based on consent, you may withdraw consent at any time for the future. You may also lodge a complaint with a competent data-protection authority. To exercise a right, email privacy@contivoapp.com. We may need to verify that the request relates to your account.'],
-        ['17. Children', 'Contivo is not directed to children who cannot legally consent to the processing of their personal data in their country. If you believe a child has provided personal data without valid authorization, contact privacy@contivoapp.com.'],
+        ['15. Account deletion and shared data', 'You can initiate account deletion inside the Contivo app. You may also request deletion through the public Account Deletion page at contivoapp.com/delete-account or by emailing contivo.app@gmail.com from the address connected to your account. If you own a shared budget, calendar, task space or another shared object, deletion may be paused until you transfer ownership to another eligible participant or delete that shared object. This protects other participants from losing shared information unexpectedly. After deletion, personal profile data is deleted or anonymized unless retention is legally required. Transactions and audit-relevant entries that form part of another participant’s shared history may remain in a de-identified form so the shared records remain complete.'],
+        ['16. Your rights', 'Depending on applicable law, you may request access to your personal data, correction, deletion, restriction, portability or objection to certain processing. Where processing is based on consent, you may withdraw consent at any time for the future. You may also lodge a complaint with a competent data-protection authority. To exercise a right, email contivo.app@gmail.com. We may need to verify that the request relates to your account.'],
+        ['17. Children', 'Contivo is not directed to children who cannot legally consent to the processing of their personal data in their country. If you believe a child has provided personal data without valid authorization, contact contivo.app@gmail.com.'],
         ['18. Changes to this Policy', 'We may update this Privacy Policy when the product, providers or legal requirements change. The current version and update date will be published on this page. Material changes may also be communicated in the app or by email where appropriate.'],
-        ['19. Contact', 'Privacy and data-rights requests: privacy@contivoapp.com. Product support: support@contivoapp.com. Website: https://contivoapp.com.']
+        ['19. Contact', 'Privacy and data-rights requests: contivo.app@gmail.com. Product support: contivo.app@gmail.com. Website: https://contivoapp.com.']
       ]
     },
     terms: {
       eyebrow: 'Legal', title: 'Terms of Service',
       intro: 'These Terms govern your use of the Contivo application, website and related services. By creating an account or using Contivo, you agree to them.',
       sections: [
-        ['1. Service provider', 'Contivo is operated from Germany. Questions about these Terms can be sent to support@contivoapp.com.'],
+        ['1. Service provider', 'Contivo is operated from Germany. Questions about these Terms can be sent to contivo.app@gmail.com.'],
         ['2. The service', 'Contivo provides tools for personal and shared financial organization, including budgets, transactions, categories, goals, plans, statistics, reports, exports, notifications and offline synchronization. Calendar, tasks and other modules may be added in future versions.'],
         ['3. Eligibility and account security', 'You must be legally able to enter into these Terms. You are responsible for accurate account information, protecting your login credentials and device, and activity performed through your account. Notify support promptly if you suspect unauthorized access.'],
         ['4. Acceptable use', 'Use Contivo only for lawful purposes. You must not access another person’s data without permission, interfere with security or service operation, upload malicious content, automate abusive requests, reverse engineer protected parts of the service where prohibited, impersonate others or use Contivo for fraud or unlawful activity.'],
@@ -53,7 +53,7 @@ export const legalText = {
         ['14. Disclaimers and liability', 'Contivo is provided with the care reasonably expected from a digital service. To the extent permitted by law, Contivo is not responsible for indirect or consequential losses, decisions made from user-entered information, or losses caused by circumstances outside reasonable control. Nothing in these Terms limits mandatory consumer rights or liability that cannot legally be excluded.'],
         ['15. Governing law', 'These Terms are governed by the laws applicable in Germany, without depriving consumers of mandatory protections available in their country of residence. Mandatory statutory jurisdiction rules remain unaffected.'],
         ['16. Changes to these Terms', 'We may update these Terms when the service or legal requirements change. The current version and update date will be published here. Material changes may be communicated through the app or by email where appropriate.'],
-        ['17. Contact', 'Questions about these Terms or the service can be sent to support@contivoapp.com.']
+        ['17. Contact', 'Questions about these Terms or the service can be sent to contivo.app@gmail.com.']
       ]
     },
     deletion: {
@@ -61,20 +61,20 @@ export const legalText = {
       intro: 'You can permanently request deletion of your Contivo account and associated personal data.',
       sections: [
         ['1. Delete inside the app', 'Open Contivo and go to Settings → Account → Delete account. Review the warning, confirm your identity when requested and submit the deletion. This is the preferred and fastest method.'],
-        ['2. Request deletion by email', 'If you cannot access the app, send an email from the address connected to your Contivo account to privacy@contivoapp.com with the subject “Delete my Contivo account”. Do not send your password, payment details or unnecessary financial information. We may ask you to verify account ownership.'],
+        ['2. Request deletion by email', 'If you cannot access the app, send an email from the address connected to your Contivo account to contivo.app@gmail.com with the subject “Delete my Contivo account”. Do not send your password, payment details or unnecessary financial information. We may ask you to verify account ownership.'],
         ['3. Shared budgets and other shared objects', 'If you are the owner of a shared budget or another shared object, deletion is paused until you either transfer ownership to another eligible participant or delete the shared object. The app will show the affected items before final confirmation.'],
         ['4. What is deleted', 'After verification and completion of any required ownership transfer, Contivo deletes or anonymizes your account profile, authentication relationship, profile image, personal settings and personal content that is not required for another user’s shared records or for a legal obligation.'],
         ['5. What may remain', 'Entries that are part of a shared budget or shared history may remain in a de-identified form so other participants do not lose their records. Limited security, support or legal records may also be retained where necessary and permitted by law.'],
         ['6. Local data on your device', 'After account deletion, uninstall Contivo or clear the application storage on every device to remove remaining offline copies. Data that had not synchronized before deletion may exist only on that device until app storage is removed.'],
         ['7. Processing time', 'We aim to process verified deletion requests without undue delay. Complex requests, legal retention duties or unresolved shared ownership may require additional time. We will contact you if further action is needed.'],
-        ['8. Contact', 'Account deletion and privacy requests: privacy@contivoapp.com. General support: support@contivoapp.com.']
+        ['8. Contact', 'Account deletion and privacy requests: contivo.app@gmail.com. General support: contivo.app@gmail.com.']
       ]
     },
     support: {
       eyebrow: 'Support', title: 'How can we help?', intro: 'Find quick answers, report a problem or send us feedback.',
       cards: [
         ['Start with the FAQ', 'Answers about accounts, budgets, offline use, shared access, reports and deletion.', 'Open FAQ', '/faq/'],
-        ['Technical support', 'Tell us what happened, which device you use and, if possible, attach a screenshot without sensitive financial data.', 'Email support', 'mailto:support@contivoapp.com?subject=Contivo%20Support'],
+        ['Technical support', 'Tell us what happened, which device you use and, if possible, attach a screenshot without sensitive financial data.', 'Email support', 'mailto:contivo.app@gmail.com?subject=Contivo%20Support'],
         ['Privacy and account deletion', 'Request access, correction, export or deletion of personal data.', 'Privacy options', '/delete-account/']
       ],
       responseTitle: 'What to include in your message',
@@ -99,7 +99,7 @@ export const legalText = {
       eyebrow: 'Правовая информация', title: 'Политика конфиденциальности',
       intro: 'Политика объясняет, какие персональные данные обрабатывает Contivo, зачем это необходимо, как данные защищаются и какие права есть у пользователя.',
       sections: [
-        ['1. Ответственный за обработку и контакты', 'Contivo управляется из Германии и отвечает за обработку данных, описанную в этой Политике. Запросы по конфиденциальности и защите данных: privacy@contivoapp.com. Общая поддержка: support@contivoapp.com.'],
+        ['1. Ответственный за обработку и контакты', 'Contivo управляется из Германии и отвечает за обработку данных, описанную в этой Политике. Запросы по конфиденциальности и защите данных: contivo.app@gmail.com. Общая поддержка: contivo.app@gmail.com.'],
         ['2. Область действия', 'Политика применяется к мобильному приложению Contivo для Android и iOS, сайту contivoapp.com и связанным обращениям в поддержку. Она не распространяется на сторонние сайты и сервисы с собственными политиками.'],
         ['3. Данные аккаунта и профиля', 'При создании и использовании аккаунта могут обрабатываться адрес электронной почты, идентификаторы авторизации, отображаемое имя, фотография профиля, язык, настройки, выбранный активный бюджет и технические данные аккаунта. Пароли обрабатываются поставщиком авторизации и не хранятся Contivo в читаемом виде.'],
         ['4. Финансовые и созданные пользователем данные', 'Contivo обрабатывает данные, которые пользователь вводит самостоятельно: бюджеты, валюты, категории, доходы и расходы, суммы, даты, заметки, цели, сбережения, инвестиции, планы, настройки статистики и параметры экспорта. Contivo не подключается к банковскому счёту и не запрашивает реквизиты банковских карт для функций финансового учёта.'],
@@ -113,18 +113,18 @@ export const legalText = {
         ['12. Международная передача', 'Некоторые поставщики могут обрабатывать данные за пределами Германии или Европейской экономической зоны. Когда это необходимо, используются решение об адекватности, стандартные договорные положения или другой законный механизм передачи.'],
         ['13. Безопасность', 'Contivo использует зашифрованные соединения и разумные технические и организационные меры защиты. Доступ ограничивается аккаунтом и ролями бюджета. Ни одна интернет-система не может гарантировать абсолютную безопасность, поэтому защищайте устройство, электронную почту и данные входа.'],
         ['14. Срок хранения', 'Данные аккаунта и приложения обычно хранятся, пока аккаунт активен и пока они нужны для предоставления сервиса. Переписка поддержки и записи безопасности могут храниться разумный срок для обработки запросов, предотвращения злоупотреблений и защиты прав. Дольше данные сохраняются только при юридической необходимости. Офлайн-копии остаются на устройстве до синхронизации, удаления, очистки данных приложения или удаления самого приложения.'],
-        ['15. Удаление аккаунта и совместные данные', 'Удаление можно начать внутри Contivo. Также можно воспользоваться страницей contivoapp.com/ru/delete-account или написать с адреса аккаунта на privacy@contivoapp.com. Если пользователь владеет совместным бюджетом, календарём, пространством задач или другим совместным объектом, удаление приостанавливается до передачи прав подходящему участнику либо удаления такого объекта. После удаления персональные данные профиля удаляются или обезличиваются, кроме случаев обязательного хранения. Операции и записи, необходимые для общей истории других участников, могут сохраняться в обезличенном виде.'],
-        ['16. Права пользователя', 'В зависимости от закона пользователь может запросить доступ, исправление, удаление, ограничение, переносимость данных или возразить против определённой обработки. Согласие можно отозвать на будущее. Также можно обратиться в компетентный орган по защите данных. Для реализации прав напишите на privacy@contivoapp.com; может потребоваться подтверждение принадлежности аккаунта.'],
-        ['17. Дети', 'Contivo не предназначен для детей, которые не могут самостоятельно дать законное согласие на обработку данных в своей стране. Если вы считаете, что ребёнок передал данные без действительного разрешения, напишите на privacy@contivoapp.com.'],
+        ['15. Удаление аккаунта и совместные данные', 'Удаление можно начать внутри Contivo. Также можно воспользоваться страницей contivoapp.com/ru/delete-account или написать с адреса аккаунта на contivo.app@gmail.com. Если пользователь владеет совместным бюджетом, календарём, пространством задач или другим совместным объектом, удаление приостанавливается до передачи прав подходящему участнику либо удаления такого объекта. После удаления персональные данные профиля удаляются или обезличиваются, кроме случаев обязательного хранения. Операции и записи, необходимые для общей истории других участников, могут сохраняться в обезличенном виде.'],
+        ['16. Права пользователя', 'В зависимости от закона пользователь может запросить доступ, исправление, удаление, ограничение, переносимость данных или возразить против определённой обработки. Согласие можно отозвать на будущее. Также можно обратиться в компетентный орган по защите данных. Для реализации прав напишите на contivo.app@gmail.com; может потребоваться подтверждение принадлежности аккаунта.'],
+        ['17. Дети', 'Contivo не предназначен для детей, которые не могут самостоятельно дать законное согласие на обработку данных в своей стране. Если вы считаете, что ребёнок передал данные без действительного разрешения, напишите на contivo.app@gmail.com.'],
         ['18. Изменения Политики', 'Политика может обновляться при изменении продукта, поставщиков или требований закона. Текущая версия и дата всегда публикуются на этой странице. О существенных изменениях при необходимости сообщается в приложении или по электронной почте.'],
-        ['19. Контакты', 'Конфиденциальность и права на данные: privacy@contivoapp.com. Поддержка: support@contivoapp.com. Сайт: https://contivoapp.com.']
+        ['19. Контакты', 'Конфиденциальность и права на данные: contivo.app@gmail.com. Поддержка: contivo.app@gmail.com. Сайт: https://contivoapp.com.']
       ]
     },
     terms: {
       eyebrow: 'Правовая информация', title: 'Условия использования',
       intro: 'Эти Условия регулируют использование приложения Contivo, сайта и связанных сервисов. Создавая аккаунт или используя Contivo, пользователь соглашается с ними.',
       sections: [
-        ['1. Поставщик сервиса', 'Contivo управляется из Германии. Вопросы по Условиям: support@contivoapp.com.'],
+        ['1. Поставщик сервиса', 'Contivo управляется из Германии. Вопросы по Условиям: contivo.app@gmail.com.'],
         ['2. Сервис', 'Contivo предоставляет инструменты для личной и совместной организации финансов: бюджеты, операции, категории, цели, планы, статистика, отчёты, экспорт, уведомления и офлайн-синхронизация. В будущем могут быть добавлены календарь, задачи и другие модули.'],
         ['3. Право использования и безопасность аккаунта', 'Пользователь должен иметь законное право принять эти Условия. Он отвечает за правильность данных аккаунта, защиту устройства и данных входа, а также действия через аккаунт. При подозрении на несанкционированный доступ нужно сообщить в поддержку.'],
         ['4. Допустимое использование', 'Нельзя незаконно получать доступ к чужим данным, нарушать безопасность и работу сервиса, загружать вредоносные материалы, автоматизировать злоупотребления, выдавать себя за другого человека, обходить ограничения или использовать Contivo для мошенничества и иных незаконных действий.'],
@@ -140,7 +140,7 @@ export const legalText = {
         ['14. Ответственность', 'Contivo предоставляется с разумной заботой, ожидаемой от цифрового сервиса. В пределах закона Contivo не отвечает за косвенный ущерб, решения на основе введённых пользователем данных или обстоятельства вне разумного контроля. Обязательные права потребителей и ответственность, которую нельзя исключить законом, сохраняются.'],
         ['15. Применимое право', 'Применяется право Германии, без лишения потребителя обязательной защиты страны его проживания. Императивные правила подсудности остаются в силе.'],
         ['16. Изменения Условий', 'Условия могут обновляться при изменении сервиса или закона. Актуальная версия и дата публикуются здесь. О существенных изменениях при необходимости сообщается в приложении или по электронной почте.'],
-        ['17. Контакты', 'Вопросы по Условиям и сервису: support@contivoapp.com.']
+        ['17. Контакты', 'Вопросы по Условиям и сервису: contivo.app@gmail.com.']
       ]
     },
     deletion: {
@@ -148,20 +148,20 @@ export const legalText = {
       intro: 'Здесь можно узнать, как навсегда удалить аккаунт Contivo и связанные персональные данные.',
       sections: [
         ['1. Удаление в приложении', 'Откройте Contivo: Настройки → Аккаунт → Удалить аккаунт. Прочитайте предупреждение, подтвердите личность при необходимости и отправьте запрос. Это основной и самый быстрый способ.'],
-        ['2. Запрос по электронной почте', 'Если войти в приложение невозможно, отправьте письмо с адреса, привязанного к аккаунту, на privacy@contivoapp.com с темой «Удалить мой аккаунт Contivo». Не отправляйте пароль, платёжные реквизиты или лишние финансовые сведения. Может потребоваться подтверждение владения аккаунтом.'],
+        ['2. Запрос по электронной почте', 'Если войти в приложение невозможно, отправьте письмо с адреса, привязанного к аккаунту, на contivo.app@gmail.com с темой «Удалить мой аккаунт Contivo». Не отправляйте пароль, платёжные реквизиты или лишние финансовые сведения. Может потребоваться подтверждение владения аккаунтом.'],
         ['3. Совместные бюджеты и другие объекты', 'Если вы владелец совместного бюджета или другого совместного объекта, удаление приостанавливается, пока вы не передадите права подходящему участнику или не удалите этот объект. Перед подтверждением приложение покажет список таких объектов.'],
         ['4. Что удаляется', 'После проверки и выполнения необходимых передач прав Contivo удаляет или обезличивает профиль, связь авторизации, фотографию, личные настройки и личный контент, который не требуется для общей истории других пользователей или по закону.'],
         ['5. Что может сохраниться', 'Записи, являющиеся частью совместного бюджета или общей истории, могут сохраниться в обезличенном виде, чтобы другие участники не потеряли данные. Также могут временно храниться ограниченные записи безопасности, поддержки или юридически обязательные сведения.'],
         ['6. Локальные данные на устройстве', 'После удаления аккаунта удалите приложение Contivo или очистите его данные на каждом устройстве, чтобы удалить оставшиеся офлайн-копии. Несинхронизированные данные могут существовать только на устройстве до очистки хранилища приложения.'],
         ['7. Срок обработки', 'Проверенные запросы обрабатываются без неоправданной задержки. Дополнительное время может понадобиться при сложном запросе, обязанности хранения или незавершённой передаче прав. При необходимости мы свяжемся с вами.'],
-        ['8. Контакты', 'Удаление аккаунта и конфиденциальность: privacy@contivoapp.com. Общая поддержка: support@contivoapp.com.']
+        ['8. Контакты', 'Удаление аккаунта и конфиденциальность: contivo.app@gmail.com. Общая поддержка: contivo.app@gmail.com.']
       ]
     },
     support: {
       eyebrow: 'Поддержка', title: 'Чем мы можем помочь?', intro: 'Найдите быстрый ответ, сообщите о проблеме или отправьте предложение.',
       cards: [
         ['Начните с FAQ', 'Ответы об аккаунте, бюджетах, офлайн-режиме, совместном доступе, отчётах и удалении.', 'Открыть FAQ', '/ru/faq/'],
-        ['Техническая поддержка', 'Опишите проблему, устройство и по возможности приложите снимок экрана без конфиденциальных финансовых данных.', 'Написать в поддержку', 'mailto:support@contivoapp.com?subject=Contivo%20Support'],
+        ['Техническая поддержка', 'Опишите проблему, устройство и по возможности приложите снимок экрана без конфиденциальных финансовых данных.', 'Написать в поддержку', 'mailto:contivo.app@gmail.com?subject=Contivo%20Support'],
         ['Конфиденциальность и удаление', 'Запросите доступ, исправление, перенос или удаление персональных данных.', 'Управление данными', '/ru/delete-account/']
       ],
       responseTitle: 'Что указать в сообщении',
@@ -186,7 +186,7 @@ export const legalText = {
       eyebrow: 'Rechtliches', title: 'Datenschutzerklärung',
       intro: 'Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten Contivo verarbeitet, warum dies geschieht, wie die Daten geschützt werden und welche Rechte bestehen.',
       sections: [
-        ['1. Verantwortlicher und Kontakt', 'Contivo wird aus Deutschland betrieben und ist für die in dieser Erklärung beschriebene Verarbeitung verantwortlich. Datenschutzanfragen: privacy@contivoapp.com. Allgemeiner Support: support@contivoapp.com.'],
+        ['1. Verantwortlicher und Kontakt', 'Contivo wird aus Deutschland betrieben und ist für die in dieser Erklärung beschriebene Verarbeitung verantwortlich. Datenschutzanfragen: contivo.app@gmail.com. Allgemeiner Support: contivo.app@gmail.com.'],
         ['2. Geltungsbereich', 'Diese Erklärung gilt für die Contivo-App für Android und iOS, die Website contivoapp.com und zugehörige Supportkommunikation. Sie gilt nicht für externe Dienste mit eigenen Datenschutzhinweisen.'],
         ['3. Konto- und Profildaten', 'Bei Erstellung und Nutzung eines Kontos können E-Mail-Adresse, Authentifizierungskennungen, Anzeigename, Profilbild, Sprache, Einstellungen, aktives Budget und technische Kontometadaten verarbeitet werden. Passwörter werden über den Authentifizierungsanbieter verarbeitet und von Contivo nicht im Klartext gespeichert.'],
         ['4. Finanzdaten und Nutzerinhalte', 'Contivo verarbeitet die freiwillig eingegebenen Inhalte: Budgets, Währungen, Kategorien, Einnahmen und Ausgaben, Beträge, Daten, Notizen, Ziele, Spar- und Investitionseinträge, Pläne, Statistik- und Exporteinstellungen. Contivo verbindet sich für diese Funktionen nicht mit Bankkonten und verarbeitet keine Karten- oder Zahlungskontodaten.'],
@@ -200,18 +200,18 @@ export const legalText = {
         ['12. Internationale Übermittlungen', 'Einige Anbieter können Daten außerhalb Deutschlands oder des Europäischen Wirtschaftsraums verarbeiten. Soweit erforderlich, erfolgen Übermittlungen auf Grundlage eines Angemessenheitsbeschlusses, von Standardvertragsklauseln oder eines anderen zulässigen Mechanismus.'],
         ['13. Sicherheit', 'Contivo verwendet verschlüsselte Verbindungen sowie angemessene technische und organisatorische Schutzmaßnahmen. Zugriffe werden nach Konto und Budgetrollen begrenzt. Absolute Sicherheit kann kein Onlinedienst garantieren; schütze daher Gerät, E-Mail-Konto und Zugangsdaten.'],
         ['14. Speicherdauer', 'Konto- und App-Daten werden grundsätzlich während der aktiven Kontonutzung und solange gespeichert, wie sie für den Dienst erforderlich sind. Support- und Sicherheitsdaten können für einen angemessenen Zeitraum zur Bearbeitung, Missbrauchsprävention oder Rechtsverteidigung aufbewahrt werden. Eine längere Speicherung erfolgt bei gesetzlicher Pflicht. Lokale Offline-Kopien verbleiben bis zur Synchronisierung, Löschung, Bereinigung des App-Speichers oder Deinstallation.'],
-        ['15. Kontolöschung und gemeinsame Daten', 'Die Löschung kann in der App gestartet werden. Alternativ kann die öffentliche Seite contivoapp.com/de/delete-account genutzt oder eine Nachricht von der Konto-E-Mail an privacy@contivoapp.com gesendet werden. Eigentümer gemeinsamer Budgets, Kalender, Aufgabenbereiche oder anderer gemeinsamer Objekte müssen zuvor Eigentum übertragen oder das Objekt löschen. Danach werden persönliche Profildaten gelöscht oder anonymisiert, soweit keine gesetzliche Aufbewahrungspflicht besteht. Einträge, die für die gemeinsame Historie anderer Teilnehmer notwendig sind, können anonymisiert bestehen bleiben.'],
-        ['16. Betroffenenrechte', 'Je nach anwendbarem Recht bestehen Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Einwilligungen können für die Zukunft widerrufen werden. Zudem besteht ein Beschwerderecht bei einer zuständigen Datenschutzaufsichtsbehörde. Anfragen bitte an privacy@contivoapp.com; eine Identitätsprüfung kann erforderlich sein.'],
-        ['17. Kinder', 'Contivo richtet sich nicht an Kinder, die in ihrem Land nicht wirksam in die Verarbeitung personenbezogener Daten einwilligen können. Bei vermuteter unzulässiger Datenübermittlung durch ein Kind bitte privacy@contivoapp.com kontaktieren.'],
+        ['15. Kontolöschung und gemeinsame Daten', 'Die Löschung kann in der App gestartet werden. Alternativ kann die öffentliche Seite contivoapp.com/de/delete-account genutzt oder eine Nachricht von der Konto-E-Mail an contivo.app@gmail.com gesendet werden. Eigentümer gemeinsamer Budgets, Kalender, Aufgabenbereiche oder anderer gemeinsamer Objekte müssen zuvor Eigentum übertragen oder das Objekt löschen. Danach werden persönliche Profildaten gelöscht oder anonymisiert, soweit keine gesetzliche Aufbewahrungspflicht besteht. Einträge, die für die gemeinsame Historie anderer Teilnehmer notwendig sind, können anonymisiert bestehen bleiben.'],
+        ['16. Betroffenenrechte', 'Je nach anwendbarem Recht bestehen Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Einwilligungen können für die Zukunft widerrufen werden. Zudem besteht ein Beschwerderecht bei einer zuständigen Datenschutzaufsichtsbehörde. Anfragen bitte an contivo.app@gmail.com; eine Identitätsprüfung kann erforderlich sein.'],
+        ['17. Kinder', 'Contivo richtet sich nicht an Kinder, die in ihrem Land nicht wirksam in die Verarbeitung personenbezogener Daten einwilligen können. Bei vermuteter unzulässiger Datenübermittlung durch ein Kind bitte contivo.app@gmail.com kontaktieren.'],
         ['18. Änderungen', 'Diese Erklärung kann bei Änderungen des Produkts, der Anbieter oder der Rechtslage aktualisiert werden. Die aktuelle Fassung und das Datum werden hier veröffentlicht. Wesentliche Änderungen können zusätzlich in der App oder per E-Mail mitgeteilt werden.'],
-        ['19. Kontakt', 'Datenschutz und Betroffenenrechte: privacy@contivoapp.com. Produktsupport: support@contivoapp.com. Website: https://contivoapp.com.']
+        ['19. Kontakt', 'Datenschutz und Betroffenenrechte: contivo.app@gmail.com. Produktsupport: contivo.app@gmail.com. Website: https://contivoapp.com.']
       ]
     },
     terms: {
       eyebrow: 'Rechtliches', title: 'Nutzungsbedingungen',
       intro: 'Diese Bedingungen regeln die Nutzung der Contivo-App, der Website und zugehöriger Dienste. Mit Kontoerstellung oder Nutzung werden sie akzeptiert.',
       sections: [
-        ['1. Diensteanbieter', 'Contivo wird aus Deutschland betrieben. Fragen zu diesen Bedingungen: support@contivoapp.com.'],
+        ['1. Diensteanbieter', 'Contivo wird aus Deutschland betrieben. Fragen zu diesen Bedingungen: contivo.app@gmail.com.'],
         ['2. Dienst', 'Contivo bietet Werkzeuge zur persönlichen und gemeinsamen Finanzorganisation, darunter Budgets, Buchungen, Kategorien, Ziele, Pläne, Statistiken, Berichte, Exporte, Benachrichtigungen und Offline-Synchronisierung. Kalender, Aufgaben und weitere Module können später ergänzt werden.'],
         ['3. Berechtigung und Kontosicherheit', 'Nutzer müssen rechtlich in der Lage sein, diese Bedingungen zu akzeptieren. Sie sind für richtige Kontodaten, den Schutz von Zugangsdaten und Gerät sowie Aktivitäten über ihr Konto verantwortlich. Vermuteter unbefugter Zugriff ist dem Support mitzuteilen.'],
         ['4. Zulässige Nutzung', 'Untersagt sind insbesondere unbefugter Zugriff auf fremde Daten, Störung der Sicherheit oder des Dienstes, schädliche Inhalte, automatisierter Missbrauch, Identitätstäuschung, Umgehung von Schutzmaßnahmen und Nutzung zu Betrug oder sonstigen rechtswidrigen Zwecken.'],
@@ -227,7 +227,7 @@ export const legalText = {
         ['14. Haftung', 'Contivo wird mit der bei einem digitalen Dienst angemessen zu erwartenden Sorgfalt bereitgestellt. Soweit gesetzlich zulässig, besteht keine Haftung für mittelbare Schäden, Entscheidungen aufgrund von Nutzereingaben oder Ereignisse außerhalb angemessener Kontrolle. Zwingende Verbraucherrechte und unabdingbare Haftung bleiben unberührt.'],
         ['15. Anwendbares Recht', 'Es gilt deutsches Recht, ohne Verbrauchern zwingenden Schutz ihres Wohnsitzstaates zu entziehen. Zwingende Gerichtsstandsregeln bleiben unberührt.'],
         ['16. Änderungen', 'Die Bedingungen können bei Änderungen des Dienstes oder der Rechtslage aktualisiert werden. Die aktuelle Fassung und das Datum werden hier veröffentlicht. Wesentliche Änderungen können in der App oder per E-Mail angekündigt werden.'],
-        ['17. Kontakt', 'Fragen zu Bedingungen oder Dienst: support@contivoapp.com.']
+        ['17. Kontakt', 'Fragen zu Bedingungen oder Dienst: contivo.app@gmail.com.']
       ]
     },
     deletion: {
@@ -235,20 +235,20 @@ export const legalText = {
       intro: 'Hier erfährst du, wie du dein Contivo-Konto und die zugehörigen personenbezogenen Daten dauerhaft löschen lassen kannst.',
       sections: [
         ['1. Löschung in der App', 'Öffne Contivo und gehe zu Einstellungen → Konto → Konto löschen. Lies den Hinweis, bestätige deine Identität falls verlangt und sende die Löschung ab. Dies ist der bevorzugte und schnellste Weg.'],
-        ['2. Löschanfrage per E-Mail', 'Falls du keinen Zugriff auf die App hast, sende von der mit dem Konto verbundenen E-Mail-Adresse eine Nachricht an privacy@contivoapp.com mit dem Betreff „Mein Contivo-Konto löschen“. Sende kein Passwort, keine Zahlungsdaten und keine unnötigen Finanzinformationen. Eine Prüfung der Kontoinhaberschaft kann erforderlich sein.'],
+        ['2. Löschanfrage per E-Mail', 'Falls du keinen Zugriff auf die App hast, sende von der mit dem Konto verbundenen E-Mail-Adresse eine Nachricht an contivo.app@gmail.com mit dem Betreff „Mein Contivo-Konto löschen“. Sende kein Passwort, keine Zahlungsdaten und keine unnötigen Finanzinformationen. Eine Prüfung der Kontoinhaberschaft kann erforderlich sein.'],
         ['3. Gemeinsame Budgets und Objekte', 'Wenn du Eigentümer eines gemeinsamen Budgets oder eines anderen gemeinsamen Objekts bist, wird die Löschung pausiert, bis du das Eigentum an einen geeigneten Teilnehmer überträgst oder das Objekt löschst. Die App zeigt die betroffenen Objekte vor der endgültigen Bestätigung.'],
         ['4. Was gelöscht wird', 'Nach Prüfung und erforderlicher Eigentumsübertragung löscht oder anonymisiert Contivo Profil, Authentifizierungsbezug, Profilbild, persönliche Einstellungen und persönliche Inhalte, soweit sie nicht für gemeinsame Datensätze anderer Nutzer oder aufgrund gesetzlicher Pflichten benötigt werden.'],
         ['5. Was bestehen bleiben kann', 'Einträge aus gemeinsamen Budgets oder gemeinsamer Historie können anonymisiert erhalten bleiben, damit andere Teilnehmer ihre Aufzeichnungen nicht verlieren. Begrenzte Sicherheits-, Support- oder gesetzlich erforderliche Daten können ebenfalls aufbewahrt werden.'],
         ['6. Lokale Daten auf Geräten', 'Nach der Kontolöschung solltest du Contivo auf allen Geräten deinstallieren oder den App-Speicher löschen, um verbleibende Offline-Kopien zu entfernen. Noch nicht synchronisierte Daten können bis dahin nur auf dem Gerät vorhanden sein.'],
         ['7. Bearbeitungszeit', 'Verifizierte Löschanfragen werden ohne unangemessene Verzögerung bearbeitet. Komplexe Anfragen, gesetzliche Aufbewahrung oder offene Eigentumsübertragungen können zusätzliche Zeit erfordern. Falls weitere Schritte nötig sind, melden wir uns.'],
-        ['8. Kontakt', 'Kontolöschung und Datenschutz: privacy@contivoapp.com. Allgemeiner Support: support@contivoapp.com.']
+        ['8. Kontakt', 'Kontolöschung und Datenschutz: contivo.app@gmail.com. Allgemeiner Support: contivo.app@gmail.com.']
       ]
     },
     support: {
       eyebrow: 'Support', title: 'Wie können wir helfen?', intro: 'Finde schnelle Antworten, melde ein Problem oder sende Feedback.',
       cards: [
         ['Zuerst ins FAQ', 'Antworten zu Konto, Budgets, Offline-Nutzung, gemeinsamem Zugriff, Berichten und Löschung.', 'FAQ öffnen', '/de/faq/'],
-        ['Technischer Support', 'Beschreibe das Problem, dein Gerät und füge nach Möglichkeit einen Screenshot ohne sensible Finanzdaten hinzu.', 'Support mailen', 'mailto:support@contivoapp.com?subject=Contivo%20Support'],
+        ['Technischer Support', 'Beschreibe das Problem, dein Gerät und füge nach Möglichkeit einen Screenshot ohne sensible Finanzdaten hinzu.', 'Support mailen', 'mailto:contivo.app@gmail.com?subject=Contivo%20Support'],
         ['Datenschutz und Löschung', 'Fordere Auskunft, Berichtigung, Übertragbarkeit oder Löschung personenbezogener Daten an.', 'Datenschutzoptionen', '/de/delete-account/']
       ],
       responseTitle: 'Was deine Nachricht enthalten sollte',
