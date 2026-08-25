@@ -65,5 +65,12 @@ export function prefixFor(lang) {
 
 export function pathFor(lang, path = '/') {
   const prefix = prefixFor(lang);
-  return `${prefix}${path === '/' ? '' : path}` || '/';
+  const pathWithoutQuery = (path || '/').split('?')[0].split('#')[0];
+  const normalizedPath = `/${pathWithoutQuery.replace(/^\/+|\/+$/g, '')}`;
+
+  if (normalizedPath === '/') {
+    return prefix ? `${prefix}/` : '/';
+  }
+
+  return `${prefix}${normalizedPath}/`;
 }

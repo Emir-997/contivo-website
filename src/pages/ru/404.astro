@@ -4,10 +4,18 @@ import { text } from '../../content/site.js';
 const lang = 'ru';
 const t = text[lang];
 ---
-<Layout lang={lang} currentPath="/" title={`${t.pages.notFound} — Contivo`}>
+<Layout
+  lang={lang}
+  currentPath="/"
+  title={`${t.pages.notFound} — Contivo`}
+  robots="noindex, follow"
+  includeCanonical={false}
+  includeLanguageAlternates={false}
+  includeStructuredData={false}
+>
   <main class="page"><div class="container page-card">
     <h1>{t.pages.notFound}</h1>
     <p>{t.pages.notFoundText}</p>
-    <a class="btn btn-primary" href="/">{t.pages.homeButton}</a>
+    <a class="btn btn-primary" href="/ru/">{t.pages.homeButton}</a>
   </div></main>
 </Layout>

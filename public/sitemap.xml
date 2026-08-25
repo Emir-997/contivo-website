@@ -55,6 +55,15 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://contivoapp.com/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/faq/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/faq/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/faq/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/faq/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://contivoapp.com/ru/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/" />
@@ -109,6 +118,15 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://contivoapp.com/ru/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/faq/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/faq/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/faq/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/faq/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://contivoapp.com/de/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/" />
@@ -161,6 +179,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/terms/" />
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://contivoapp.com/de/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://contivoapp.com/faq/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://contivoapp.com/ru/faq/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://contivoapp.com/de/faq/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://contivoapp.com/faq/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://contivoapp.com/delete-account/</loc>
