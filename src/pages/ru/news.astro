@@ -10,7 +10,8 @@ const t = text[lang];
     <p>{t.pages.newsText}</p>
     <div class="card" style="box-shadow:none; margin-top:24px;">
       <h3>{t.pages.newsCardTitle}</h3>
-      <p>{t.pages.newsCardText}</p>
+      <p><small><time datetime="2026-09-10">{t.pages.newsCardDate}</time></small></p>
+      {t.pages.newsCardParagraphs.map((paragraph) => <p>{paragraph}</p>)}
     </div>
   </div></main>
 </Layout>
