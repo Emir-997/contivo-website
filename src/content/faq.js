@@ -7,7 +7,7 @@ export const faqContent = {
     items: [
       { q: 'What is Contivo?', a: 'Contivo is a personal and shared finance app for tracking income and expenses, managing budgets, planning goals and reviewing reports.' },
       { q: 'Is Contivo free?', a: 'The first Contivo release is planned as a free app. Optional paid features may be introduced later, with clear information before any purchase.' },
-      { q: 'Which platforms are supported?', a: 'Contivo is being prepared for Android and iOS. Store download buttons will become active after publication.' },
+      { q: 'Which platforms are supported?', a: 'Contivo is available for Android and iOS. Use the store download buttons to install the app.' },
       { q: 'Can I use Contivo offline?', a: 'Yes. Selected account, profile, budget and transaction data can be stored locally. Changes created offline are queued and synchronized when an internet connection becomes available.' },
       { q: 'Can I use more than one budget?', a: 'Yes. You can create separate personal, family or other budgets and switch between them.' },
       { q: 'How do shared budgets work?', a: 'A budget owner can invite participants and assign owner, editor or viewer permissions. Members see and change information only according to their role and the budget settings.' },
@@ -29,7 +29,7 @@ export const faqContent = {
     items: [
       { q: 'Что такое Contivo?', a: 'Contivo — приложение для личных и совместных финансов: учёта доходов и расходов, управления бюджетами, планирования целей и просмотра отчётов.' },
       { q: 'Contivo будет бесплатным?', a: 'Первую версию планируется выпустить бесплатно. В будущем могут появиться дополнительные платные функции, информация о которых будет показана до покупки.' },
-      { q: 'Какие платформы поддерживаются?', a: 'Contivo готовится к выпуску для Android и iOS. Кнопки магазинов станут активными после публикации.' },
+      { q: 'Какие платформы поддерживаются?', a: 'Contivo доступен для Android и iOS. Используйте кнопки магазинов, чтобы установить приложение.' },
       { q: 'Можно ли пользоваться Contivo офлайн?', a: 'Да. Часть данных аккаунта, профиля, бюджетов и операций хранится локально. Созданные офлайн изменения ставятся в очередь и синхронизируются после подключения к интернету.' },
       { q: 'Можно ли создать несколько бюджетов?', a: 'Да. Можно создать личные, семейные и другие бюджеты и переключаться между ними.' },
       { q: 'Как работают совместные бюджеты?', a: 'Владелец приглашает участников и назначает роли владельца, редактора или наблюдателя. Участники видят и изменяют данные только согласно своей роли и настройкам бюджета.' },
@@ -51,7 +51,7 @@ export const faqContent = {
     items: [
       { q: 'Was ist Contivo?', a: 'Contivo ist eine App für persönliche und gemeinsame Finanzen: Einnahmen und Ausgaben erfassen, Budgets verwalten, Ziele planen und Berichte auswerten.' },
       { q: 'Ist Contivo kostenlos?', a: 'Die erste Version ist als kostenlose App geplant. Optionale kostenpflichtige Funktionen können später hinzukommen und werden vor einem Kauf klar angezeigt.' },
-      { q: 'Welche Plattformen werden unterstützt?', a: 'Contivo wird für Android und iOS vorbereitet. Die Store-Schaltflächen werden nach der Veröffentlichung aktiviert.' },
+      { q: 'Welche Plattformen werden unterstützt?', a: 'Contivo ist für Android und iOS verfügbar. Verwende die Store-Schaltflächen, um die App zu installieren.' },
       { q: 'Kann ich Contivo offline verwenden?', a: 'Ja. Ausgewählte Konto-, Profil-, Budget- und Buchungsdaten werden lokal gespeichert. Offline erstellte Änderungen werden vorgemerkt und bei verfügbarer Internetverbindung synchronisiert.' },
       { q: 'Kann ich mehrere Budgets verwenden?', a: 'Ja. Du kannst persönliche, Familien- und andere Budgets erstellen und zwischen ihnen wechseln.' },
       { q: 'Wie funktionieren gemeinsame Budgets?', a: 'Eigentümer laden Teilnehmer ein und vergeben Rollen als Eigentümer, Bearbeiter oder Beobachter. Mitglieder sehen und ändern Daten nur gemäß ihrer Rolle und den Budgeteinstellungen.' },
@@ -71,16 +71,16 @@ export const footerContent = {
   en: {
     tagline: 'Control your life.', navigation: 'Navigation', legal: 'Legal', resources: 'Resources', language: 'Language',
     home: 'Home', help: 'Help', news: 'News', contact: 'Contact', privacy: 'Privacy Policy', terms: 'Terms of Use', deletion: 'Delete account', faq: 'FAQ', support: 'Support',
-    play: 'Google Play — soon', store: 'App Store — soon', rights: 'All rights reserved.', version: 'Website v1.4',
+    play: 'Google Play', store: 'App Store', rights: 'All rights reserved.', version: 'Website v1.4',
   },
   ru: {
     tagline: 'Контролируй свою жизнь.', navigation: 'Навигация', legal: 'Документы', resources: 'Ресурсы', language: 'Язык',
     home: 'Главная', help: 'Помощь', news: 'Новости', contact: 'Контакты', privacy: 'Политика конфиденциальности', terms: 'Условия использования', deletion: 'Удаление аккаунта', faq: 'FAQ', support: 'Поддержка',
-    play: 'Google Play — скоро', store: 'App Store — скоро', rights: 'Все права защищены.', version: 'Сайт v1.4',
+    play: 'Google Play', store: 'App Store', rights: 'Все права защищены.', version: 'Сайт v1.4',
   },
   de: {
     tagline: 'Kontrolliere dein Leben.', navigation: 'Navigation', legal: 'Rechtliches', resources: 'Ressourcen', language: 'Sprache',
     home: 'Startseite', help: 'Hilfe', news: 'Neuigkeiten', contact: 'Kontakt', privacy: 'Datenschutzerklärung', terms: 'Nutzungsbedingungen', deletion: 'Konto löschen', faq: 'FAQ', support: 'Support',
-    play: 'Google Play — bald', store: 'App Store — bald', rights: 'Alle Rechte vorbehalten.', version: 'Website v1.4',
+    play: 'Google Play', store: 'App Store', rights: 'Alle Rechte vorbehalten.', version: 'Website v1.4',
   },
 };

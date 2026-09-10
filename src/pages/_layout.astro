@@ -228,8 +228,8 @@ const schemaData = {
 
         <div class="footer-column footer-resources">
           <h2>{footer.resources}</h2>
-          <span>{footer.play}</span>
-          <span>{footer.store}</span>
+          <a href={site.googlePlayUrl}>{footer.play}</a>
+          <a href={site.appStoreUrl}>{footer.store}</a>
           <label for="footer-language">{footer.language}</label>
           <select id="footer-language" class="language-select footer-language-select" aria-label={footer.language} onchange="window.location.href=this.value">
             {languages.map((item) => (

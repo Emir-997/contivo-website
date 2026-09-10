@@ -8,7 +8,7 @@ const copy = {
     eyebrow: 'Personal finance, made simple',
     title: 'Control your life',
     body: 'Track income and expenses, plan budgets and understand your money with one clear, modern app.',
-    available: 'Mobile apps coming soon',
+    available: 'Download now',
     previewAlt: 'Contivo finance overview screen',
     trust: ['Clear overview', 'Flexible budgets', 'Useful reports'],
   },
@@ -16,7 +16,7 @@ const copy = {
     eyebrow: 'Личные финансы — просто и понятно',
     title: 'Контролируй свою жизнь',
     body: 'Следите за доходами и расходами, планируйте бюджеты и понимайте свои финансы в одном современном приложении.',
-    available: 'Мобильные приложения скоро',
+    available: 'Скачать сейчас',
     previewAlt: 'Экран финансового обзора Contivo',
     trust: ['Понятный обзор', 'Гибкие бюджеты', 'Полезные отчёты'],
   },
@@ -24,7 +24,7 @@ const copy = {
     eyebrow: 'Persönliche Finanzen, einfach gemacht',
     title: 'Kontrolliere dein Leben',
     body: 'Behalte Einnahmen und Ausgaben im Blick, plane Budgets und verstehe deine Finanzen mit einer klaren, modernen App.',
-    available: 'Mobile Apps folgen bald',
+    available: 'Jetzt herunterladen',
     previewAlt: 'Contivo Finanzübersicht',
     trust: ['Klare Übersicht', 'Flexible Budgets', 'Nützliche Berichte'],
   },
@@ -46,11 +46,11 @@ const copy = {
         <p class="landing-lead">{copy.body}</p>
 
         <div class="store-actions" aria-label={copy.available}>
-          <a class="store-button" href={site.googlePlayUrl} aria-disabled="true">
+          <a class="store-button" href={site.googlePlayUrl}>
             <span class="store-icon" aria-hidden="true">▶</span>
             <span><small>{copy.available}</small><strong>Google Play</strong></span>
           </a>
-          <a class="store-button store-button-light" href={site.appStoreUrl} aria-disabled="true">
+          <a class="store-button store-button-light" href={site.appStoreUrl}>
             <span class="store-icon apple" aria-hidden="true">●</span>
             <span><small>{copy.available}</small><strong>App Store</strong></span>
           </a>
